@@ -1123,7 +1123,7 @@ ctx.canvas.height = 280;
 var myChart9 = new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["平成29年","平成30年","令和元年","令和2年"],
+    labels: ["平成28年","平成29年","平成30年","令和元年","令和2年"],
     datasets: [
       {
         data: [11.3, 13.9, 19.1, 20.2, 43.3],
