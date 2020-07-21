@@ -707,7 +707,7 @@ var myChart5 = new Chart(ctx, {
           17.0,
           9.6,
           1.4],
-        backgroundColor: ["#02CDFF", "#02CDFF", "#02CDFF", "#02CDFF", "#02CDFF", "#02CDFF"],
+        backgroundColor: ["#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3"],
         borderWidth: 1,
       },
       {
@@ -719,7 +719,7 @@ var myChart5 = new Chart(ctx, {
           16.9,
           6.0,
           1.5],
-        backgroundColor: ["#039EFF", "#039EFF", "#039EFF", "#039EFF", "#039EFF", "#039EFF"],
+        backgroundColor: ["#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC"],
         borderWidth: 1,
       },
       {
@@ -731,7 +731,7 @@ var myChart5 = new Chart(ctx, {
           17.3,
           4.6,
           1.7],
-        backgroundColor: ["#0058FF", "#0058FF", "#0058FF", "#0058FF", "#0058FF", "#0058FF"],
+        backgroundColor: ["#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF"],
         borderWidth: 1,
       },
       {
@@ -743,7 +743,7 @@ var myChart5 = new Chart(ctx, {
           16.4,
           3.2,
           1.9],
-        backgroundColor: ["#5902FF", "#5902FF", "#5902FF", "#5902FF", "#5902FF", "#5902FF"],
+        backgroundColor: ["#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3"],
         borderWidth: 1,
       },
       {
@@ -755,7 +755,7 @@ var myChart5 = new Chart(ctx, {
           14.4,
           2.5,
           1.3],
-        backgroundColor: ["#8103FF", "#8103FF", "#8103FF", "#8103FF", "#8103FF", "#8103FF"],
+        backgroundColor: ["#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3"],
         borderWidth: 1,
       },
     ],
