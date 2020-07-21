@@ -630,6 +630,7 @@ var myChart4 = new Chart(ctx, {
     elements: {
       line: {
         tension: 0, // ベジェ曲線を無効にする
+        borderWidth: 5,
         fill: false,
         stack: 1,
         // "fill": "-1"
