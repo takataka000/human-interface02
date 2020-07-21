@@ -1354,16 +1354,6 @@ var myChart10 = new Chart(ctx, {
       ],
   },
   options: {
-    tooltips: {
-      callbacks: {
-        label: function (tooltipItem, data) {
-          return data.labels[tooltipItem.index]
-            + ": "
-            + data.datasets[0].data[tooltipItem.index]
-            + " %";
-        },
-      },
-    },
     elements: {
       line: {
           tension: 0, // ベジェ曲線を無効にする
@@ -1377,7 +1367,7 @@ var myChart10 = new Chart(ctx, {
         top: 20,
         left: 10,
         bottom: 0,
-        right: 30
+        right: 10
       },
     },
     legend: {
@@ -1387,7 +1377,7 @@ var myChart10 = new Chart(ctx, {
         boxWidth: 10,
         fontSize: 10,
         fontColor: '#000',
-        padding: 5
+        padding: 10
       },
     },
     scales: {
@@ -1395,8 +1385,8 @@ var myChart10 = new Chart(ctx, {
         {
           ticks: {
             beginAtZero: true,
-            fontSize: 10,
             fontColor: '#000',
+            fontSize: 10,
             min: 0,
             max: 100,
           },
@@ -1404,7 +1394,6 @@ var myChart10 = new Chart(ctx, {
             color: 'rgba(0, 0, 0, 0.05)',
             borderDash: [6, 4],
           },
-          stacked: false,
         },
       ],
       xAxes: [
@@ -1421,83 +1410,8 @@ var myChart10 = new Chart(ctx, {
         },
       ],
     },
-    "plugins": {
-      "filler": {
-        "propagate": true
-      },
-    },
     animation: {
       duration: 2000
     },
-    // tooltips: {
-    //   callbacks: {
-    //     label: function (tooltipItem, data) {
-    //       return data.labels[tooltipItem.index]
-    //         + ": "
-    //         + data.datasets[0].data[tooltipItem.index]
-    //         + " %";
-    //     },
-    //   },
-    // },
-    // layout: {
-    //   padding: {
-    //     top: 20,
-    //     left: 10,
-    //     bottom: 0,
-    //     right: 10
-    //   },
-    // },
-    // elements: {
-    //   line: {
-    //       tension: 0, // ベジェ曲線を無効にする
-    //       fill: false,
-    //       "stack": 1,
-    //     // "fill": "-1"
-    //   },
-    // },
-    // legend: {
-    //   display: false,
-    //   position: 'bottom',
-    //   fullWidth: true,
-    //   labels: {
-    //     boxWidth: 10,
-    //     fontSize: 10,
-    //     fontColor: '#000',
-    //     padding: 10
-    //   },
-    // },
-    // scales: {
-    //   yAxes: [
-    //     {
-    //       ticks: {
-    //         beginAtZero: true,
-    //         fontColor: '#000',
-    //         fontSize: 10,
-    //         min: 0,
-    //         max: 50,
-    //       },
-    //       gridLines: {
-    //         color: 'rgba(0, 0, 0, 0.05)',
-    //         borderDash: [6, 4],
-    //       },
-    //     },
-    //   ],
-    //   xAxes: [
-    //     {
-    //       ticks: {
-    //         beginAtZero: true,
-    //         fontColor: '#000',
-    //         fontSize: 10,
-    //       },
-    //       gridLines: {
-    //         display: false,
-    //         color: 'rgba(0, 0, 0, 0.05)'
-    //       },
-    //     },
-    //   ],
-    // },
-    // animation: {
-    //   duration: 2000
-    // },
   },
 });
