@@ -184,7 +184,8 @@ html {
                   background-color: #2F2D51;
                   color: #ffffff; }
             html #main .main-inner__top .graph .graph-flexbox__item-3 {
-              min-width: 300px; }
+              min-width: 300px;
+              width: 100%; }
               html #main .main-inner__top .graph .graph-flexbox__item-3 .box {
                 width: 100%;
                 -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.01);
