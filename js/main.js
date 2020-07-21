@@ -223,7 +223,13 @@ var myChart2 = new Chart(ctx, {
     datasets: [
       {
         label: "平成28年",
-        data: [],
+        data: [
+          52.2,
+          70.1,
+          81.5,
+          87.1,
+          89.5,
+          90.9,],
         backgroundColor: ["#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3"],
         // borderColor: [
         //   "rgba(255, 99, 132, 1)",
