@@ -913,16 +913,6 @@ var myChart6 = new Chart(ctx, {
     ],
   },
   options: {
-    tooltips: {
-      callbacks: {
-        label: function (tooltipItem, data) {
-          return data.labels[tooltipItem.index]
-            + ": "
-            + data.datasets[0].data[tooltipItem.index]
-            + " 人";
-        },
-      },
-    },
     elements: {
       line: {
           tension: 0, // ベジェ曲線を無効にする
@@ -936,7 +926,7 @@ var myChart6 = new Chart(ctx, {
         top: 20,
         left: 10,
         bottom: 0,
-        right: 30
+        right: 10
       },
     },
     legend: {
@@ -954,16 +944,15 @@ var myChart6 = new Chart(ctx, {
         {
           ticks: {
             beginAtZero: true,
-            fontSize: 10,
             fontColor: '#000',
-            min: 600000,
-            max: 3300000,
+            fontSize: 10,
+            min: 0,
+            max: 100,
           },
           gridLines: {
             color: 'rgba(0, 0, 0, 0.05)',
             borderDash: [6, 4],
           },
-          stacked: false,
         },
       ],
       xAxes: [
@@ -979,11 +968,6 @@ var myChart6 = new Chart(ctx, {
           },
         },
       ],
-    },
-    "plugins": {
-      "filler": {
-        "propagate": true
-      },
     },
     animation: {
       duration: 2000
