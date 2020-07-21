@@ -224,7 +224,7 @@ var myChart2 = new Chart(ctx, {
       {
         label: "平成28年",
         data: [],
-        backgroundColor: ["#3B4BA6", "#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066"],
+        backgroundColor: ["#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3"],
         // borderColor: [
         //   "rgba(255, 99, 132, 1)",
         //   "rgba(54, 162, 235, 1)",
@@ -245,7 +245,7 @@ var myChart2 = new Chart(ctx, {
           90.5,
           91.9,
         ],
-        backgroundColor: ["#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A"],
+        backgroundColor: ["#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC"],
         // borderColor: [
         //   "rgba(255, 99, 132, 1)",
         //   "rgba(54, 162, 235, 1)",
@@ -265,7 +265,7 @@ var myChart2 = new Chart(ctx, {
           87.8,
           89.7,
           90.3,],
-        backgroundColor: ["#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB"],
+        backgroundColor: ["#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF"],
         // borderColor: [
         //   "rgba(255, 99, 132, 1)",
         //   "rgba(54, 162, 235, 1)",
@@ -285,7 +285,7 @@ var myChart2 = new Chart(ctx, {
           92.7,
           93.4,
           94.5],
-        backgroundColor: ["#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7"],
+        backgroundColor: ["#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3"],
         // borderColor: [
         //   "rgba(255, 99, 132, 1)",
         //   "rgba(54, 162, 235, 1)",
@@ -306,7 +306,7 @@ var myChart2 = new Chart(ctx, {
           95.4,
           96.5
         ],
-        backgroundColor: ["#952FC2", "#952FC2", "#952FC2", "#952FC2", "#952FC2", "#952FC2", "#952FC2", "#952FC2", "#952FC2", "#952FC2"],
+        backgroundColor: ["#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766"],
         // borderColor: [
         //   "rgba(255, 99, 132, 1)",
         //   "rgba(54, 162, 235, 1)",
