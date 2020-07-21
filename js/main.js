@@ -550,7 +550,7 @@ var myChart4 = new Chart(ctx, {
           "#DEA832"
         ],
         borderColor: ["#DEA832"],
-        borderWidth: 1,
+        borderWidth: 3,
       },
       {
         label: "パソコン",
@@ -568,7 +568,7 @@ var myChart4 = new Chart(ctx, {
           "#C8D947"
         ],
         borderColor: ["#C8D947"],
-        borderWidth: 1,
+        borderWidth: 3,
       },
       {
         label: "スマートフォン",
@@ -586,7 +586,7 @@ var myChart4 = new Chart(ctx, {
           "#ADD9C3"
         ],
         borderColor: ["#ADD9C3"],
-        borderWidth: 1,
+        borderWidth: 3,
       },
       {
         label: "モバイル端末",
@@ -604,7 +604,7 @@ var myChart4 = new Chart(ctx, {
           "#43BACC"
         ],
         borderColor: ["#43BACC"],
-        borderWidth: 1,
+        borderWidth: 3,
       },
       {
         label: "タブレット端末",
@@ -622,7 +622,7 @@ var myChart4 = new Chart(ctx, {
           "#0086BF"
         ],
         borderColor: ["#0086BF"],
-        borderWidth: 1,
+        borderWidth: 3,
       },
     ],
   },
@@ -630,7 +630,6 @@ var myChart4 = new Chart(ctx, {
     elements: {
       line: {
         tension: 0, // ベジェ曲線を無効にする
-        borderWidth: 10,
         fill: false,
         stack: 1,
         // "fill": "-1"
