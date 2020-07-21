@@ -946,8 +946,8 @@ var myChart6 = new Chart(ctx, {
             beginAtZero: true,
             fontColor: '#000',
             fontSize: 10,
-            min: 700000,
-            max: 3300000,
+            min: 500000,
+            max: 3500000,
           },
           gridLines: {
             color: 'rgba(0, 0, 0, 0.05)',
@@ -1081,7 +1081,7 @@ var myChart7 = new Chart(ctx, {
             fontColor: '#000',
             fontSize: 10,
             min: 35000000,
-            max: 82000000,
+            max: 85000000,
           },
           gridLines: {
             color: 'rgba(0, 0, 0, 0.05)',
