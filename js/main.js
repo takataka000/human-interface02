@@ -550,7 +550,7 @@ var myChart4 = new Chart(ctx, {
           "#DEA832"
         ],
         borderColor: ["#DEA832"],
-        borderWidth: 3,
+        borderWidth: 2,
       },
       {
         label: "パソコン",
@@ -568,7 +568,7 @@ var myChart4 = new Chart(ctx, {
           "#C8D947"
         ],
         borderColor: ["#C8D947"],
-        borderWidth: 3,
+        borderWidth: 2,
       },
       {
         label: "スマートフォン",
@@ -586,7 +586,7 @@ var myChart4 = new Chart(ctx, {
           "#ADD9C3"
         ],
         borderColor: ["#ADD9C3"],
-        borderWidth: 3,
+        borderWidth: 2,
       },
       {
         label: "モバイル端末",
@@ -604,7 +604,7 @@ var myChart4 = new Chart(ctx, {
           "#43BACC"
         ],
         borderColor: ["#43BACC"],
-        borderWidth: 3,
+        borderWidth: 2,
       },
       {
         label: "タブレット端末",
@@ -622,7 +622,7 @@ var myChart4 = new Chart(ctx, {
           "#0086BF"
         ],
         borderColor: ["#0086BF"],
-        borderWidth: 3,
+        borderWidth: 2,
       },
     ],
   },
