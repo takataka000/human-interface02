@@ -95,7 +95,7 @@ var myChart1 = new Chart(ctx, {
       {
         label: "平成28年",
         data: [83.5, 82.6, 98.4, 99.2, 97.5, 96.7, 93.0, 75.7, 53.6, 23.4,],
-        backgroundColor: ["#3B4BA6", "#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066",　"#BFE066"],
+        backgroundColor: ["#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3"],
         borderWidth: 1,
       },
       {
@@ -111,7 +111,7 @@ var myChart1 = new Chart(ctx, {
           73.9,
           46.7,
           20.1],
-        backgroundColor: ["#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A", "#4DC28A"],
+        backgroundColor: ["#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC", "#43BACC"],
         borderWidth: 1,
       },
       {
@@ -127,13 +127,13 @@ var myChart1 = new Chart(ctx, {
           76.6,
           51.0,
           21.5],
-        backgroundColor: ["#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB", "#54CBDB"],
+        backgroundColor: ["#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF", "#0086BF"],
         borderWidth: 1,
       },
       {
         label: "令和元年",
         data: [89.8, 80.2, 98.4, 99.1, 99.0, 98.3, 97.7, 90.5, 74.2, 57.5],
-        backgroundColor: ["#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7", "#4F6CC7"],
+        backgroundColor: ["#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3", "#4051B3"],
         borderWidth: 1,
       },
       {
@@ -150,7 +150,7 @@ var myChart1 = new Chart(ctx, {
           60.6,
           50.4,
           ],
-        backgroundColor: ["#7242C2", "#7242C2", "#7242C2", "#7242C2", "#7242C2", "#7242C2", "#7242C2", "#7242C2", "#7242C2", "#7242C2"],
+        backgroundColor: ["#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766", "#111766"],
         borderWidth: 1,
       },
     ],
