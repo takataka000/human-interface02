@@ -1120,8 +1120,8 @@ var myChart9 = new Chart(ctx, {
     labels: ["平成29年","平成30年","令和元年","令和2年"],
     datasets: [
       {
-        data: [13.9, 19.1, 20.2, 43.3],
-        backgroundColor: ["#43BACC", "#0086BF", "#4051B3", "#111766"],
+        data: [11.3, 13.9, 19.1, 20.2, 43.3],
+        backgroundColor: ["#ADD9C3", "#43BACC", "#0086BF", "#4051B3", "#111766"],
         borderWidth: 1,
       },
       ],
