@@ -43,14 +43,17 @@ html {
               padding-top: 10px; }
           html #header .head .header-top .gnav__item {
             display: block;
-            padding: 10px 15px;
+            padding: 10px 0 10px 25px;
             font-size: 1.4rem;
             position: relative;
             border-radius: 25px; }
             html #header .head .header-top .gnav__item:not(:first-child) {
               margin-top: 10px; }
             html #header .head .header-top .gnav__item .gnav__item-link {
-              color: #000; }
+              color: #000;
+              -webkit-transition: 0.4s ease-in-out;
+              -o-transition: 0.4s ease-in-out;
+              transition: 0.4s ease-in-out; }
             html #header .head .header-top .gnav__item:before {
               content: '';
               position: absolute;
@@ -60,16 +63,83 @@ html {
               height: 100%;
               border-radius: 50px;
               background-color: #2F2D51;
-              -webkit-transition: 0.25s ease-in;
-              -o-transition: 0.25s ease-in;
-              transition: 0.25s ease-in;
+              -webkit-transition: 0.4s ease-in-out;
+              -o-transition: 0.4s ease-in-out;
+              transition: 0.4s ease-in-out;
               z-index: -1; }
             html #header .head .header-top .gnav__item:hover {
               color: #ffffff; }
               html #header .head .header-top .gnav__item:hover .gnav__item-link {
-                color: #ffffff; }
+                color: #ffffff;
+                -webkit-transition: 0.3s ease-in-out;
+                -o-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out; }
               html #header .head .header-top .gnav__item:hover:before {
                 width: 100%; }
+          html #header .head .header-top .gnav .internet {
+            display: block;
+            position: relative; }
+            html #header .head .header-top .gnav .internet:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              left: 8px;
+              width: 10px;
+              height: 10px;
+              border-radius: 5px;
+              background-color: #43BACC;
+              z-index: 0; }
+          html #header .head .header-top .gnav .work {
+            display: block;
+            position: relative; }
+            html #header .head .header-top .gnav .work:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              left: 8px;
+              width: 10px;
+              height: 10px;
+              border-radius: 5px;
+              background-color: #ADD9C3;
+              z-index: 0; }
+          html #header .head .header-top .gnav .ec {
+            display: block;
+            position: relative; }
+            html #header .head .header-top .gnav .ec:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              left: 8px;
+              width: 10px;
+              height: 10px;
+              border-radius: 5px;
+              background-color: #C8D947;
+              z-index: 0; }
+          html #header .head .header-top .gnav .cam {
+            display: block;
+            position: relative; }
+            html #header .head .header-top .gnav .cam:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              left: 8px;
+              width: 10px;
+              height: 10px;
+              border-radius: 5px;
+              background-color: #DEA832;
+              z-index: 0; }
           html #header .head .header-top .gnav .active {
             background-color: #2F2D51; }
             html #header .head .header-top .gnav .active .gnav__item-link {
@@ -101,8 +171,7 @@ html {
             width: 60%;
             max-width: 800px;
             margin-top: 30px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.5); }
+            padding: 0 0 20px 0; }
         html #main .main-inner__top .graph {
           margin-top: 30px;
           padding-bottom: 50px;
@@ -114,7 +183,7 @@ html {
           box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3); }
           html #main .main-inner__top .graph .graph-intro {
             width: 60%;
-            padding: 20px 20px 0 20px; }
+            padding-top: 20px; }
           html #main .main-inner__top .graph .graph-flexbox {
             width: 100%;
             display: -webkit-box;
@@ -156,6 +225,18 @@ html {
                 html #main .main-inner__top .graph .graph-flexbox__item .box .active {
                   background-color: #2F2D51;
                   color: #ffffff; }
+              html #main .main-inner__top .graph .graph-flexbox__item .internet-main {
+                display: block;
+                position: relative; }
+                html #main .main-inner__top .graph .graph-flexbox__item .internet-main:before {
+                  content: '';
+                  position: absolute;
+                  top: 9px;
+                  left: -5px;
+                  width: 7px;
+                  height: 30px;
+                  background-color: #43BACC;
+                  z-index: -1; }
             html #main .main-inner__top .graph .graph-flexbox__item-2 {
               width: calc(100% / 2 - 1.5%);
               min-width: 300px; }
@@ -183,6 +264,30 @@ html {
                 html #main .main-inner__top .graph .graph-flexbox__item-2 .box .active {
                   background-color: #2F2D51;
                   color: #ffffff; }
+              html #main .main-inner__top .graph .graph-flexbox__item-2 .work-main {
+                display: block;
+                position: relative; }
+                html #main .main-inner__top .graph .graph-flexbox__item-2 .work-main:before {
+                  content: '';
+                  position: absolute;
+                  top: 9px;
+                  left: -5px;
+                  width: 7px;
+                  height: 30px;
+                  background-color: #ADD9C3;
+                  z-index: -1; }
+              html #main .main-inner__top .graph .graph-flexbox__item-2 .ec-main {
+                display: block;
+                position: relative; }
+                html #main .main-inner__top .graph .graph-flexbox__item-2 .ec-main:before {
+                  content: '';
+                  position: absolute;
+                  top: 9px;
+                  left: -5px;
+                  width: 7px;
+                  height: 30px;
+                  background-color: #C8D947;
+                  z-index: -1; }
             html #main .main-inner__top .graph .graph-flexbox__item-3 {
               min-width: 300px;
               width: 100%; }
@@ -223,6 +328,18 @@ html {
                 html #main .main-inner__top .graph .graph-flexbox__item-3 .box .active {
                   background-color: #2F2D51;
                   color: #ffffff; }
+              html #main .main-inner__top .graph .graph-flexbox__item-3 .cam-main {
+                display: block;
+                position: relative; }
+                html #main .main-inner__top .graph .graph-flexbox__item-3 .cam-main:before {
+                  content: '';
+                  position: absolute;
+                  top: 9px;
+                  left: -5px;
+                  width: 7px;
+                  height: 30px;
+                  background-color: #DEA832;
+                  z-index: -1; }
     @media screen and (max-width: 768px) {
       html #main {
         min-width: auto;

@@ -40,16 +40,17 @@ html {
                     }
                     &__item {
                         display: block;
-                        padding: 10px 15px;
+                        padding: 10px 0 10px 25px;
                         font-size: 1.4rem;
                         position: relative;
-
+                        border-radius: 25px;
                         &:not(:first-child) {
                             margin-top: 10px;
                         }
 
                         .gnav__item-link {
                             color: $dark;
+                            transition: 0.4s ease-in-out;
                         }
                         &:before {
                             content: '';
@@ -60,20 +61,83 @@ html {
                             height: 100%;
                             border-radius: 50px;
                             background-color: $darkblue;
-                            transition: 0.25s ease-in;
+                            transition: 0.4s ease-in-out;
                             z-index: -1;
                         }
-
-                        border-radius: 25px;
 
                         &:hover {
                             .gnav__item-link {
                                 color: $white;
+                                transition: 0.3s ease-in-out;
                             }
                             &:before {
                                 width: 100%;
                             }
                             color: $white;
+                        }
+                    }
+                    .internet {
+                        display: block;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: #43BACC;
+                            z-index: 0;
+                        }
+                    }
+                    .work {
+                        display: block;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: #ADD9C3;
+                            z-index: 0;
+                        }
+                    }
+                    .ec {
+                        display: block;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: #C8D947;
+                            z-index: 0;
+                        }
+                    }
+                    .cam {
+                        display: block;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: #DEA832;
+                            z-index: 0;
                         }
                     }
 
@@ -120,8 +184,8 @@ html {
                         width: 60%;
                         max-width: 800px;
                         margin-top: 30px;
-                        padding: 20px;
-                        background-color: rgba(255, 255, 255, 0.5);
+                        padding: 0 0 20px 0;
+                        // background-color: rgba(255, 255, 255, 0.5);
                     }
                 }
 
@@ -135,7 +199,7 @@ html {
 
                     .graph-intro {
                         width: 60%;
-                        padding: 20px 20px 0 20px;
+                        padding-top: 20px;
                     }
 
                     .graph-flexbox {
@@ -184,6 +248,20 @@ html {
                                     color: $white;
                                 }
                             }
+                            .internet-main {
+                                display: block;
+                                position: relative;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: #43BACC;
+                                    z-index: -1;
+                                }
+                            }
                         }
                         &__item-2 {
                             width: calc(100% / 2 - 1.5%);
@@ -221,6 +299,34 @@ html {
                                 .active {
                                     background-color: $darkblue;
                                     color: $white;
+                                }
+                            }
+                            .work-main {
+                                display: block;
+                                position: relative;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: #ADD9C3;
+                                    z-index: -1;
+                                }
+                            }
+                            .ec-main {
+                                display: block;
+                                position: relative;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: #C8D947;
+                                    z-index: -1;
                                 }
                             }
                         }
@@ -288,6 +394,20 @@ html {
                                 .active {
                                     background-color: $darkblue;
                                     color: $white;
+                                }
+                            }
+                            .cam-main {
+                                display: block;
+                                position: relative;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: #DEA832;
+                                    z-index: -1;
                                 }
                             }
                         }
