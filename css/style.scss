@@ -641,7 +641,7 @@ html {
     
         //main
         #main {
-            @include width;
+            @include width768;
             font-size: 1.6rem;
     
             .main-inner {

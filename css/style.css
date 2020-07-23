@@ -541,7 +541,7 @@ html {
                 color: #ffffff; }
     html #main {
       width: calc(100% - 300px);
-      min-width: 1100px;
+      min-width: 700px;
       margin-left: 300px;
       font-size: 1.6rem; }
       html #main .main-inner {
