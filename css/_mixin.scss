@@ -5,7 +5,7 @@
 }
 @mixin width-sptab {
   width: calc(100% - 300px);
-  min-width: 700px;
+  // min-width: 700px;
   margin-left: 300px;
 }
 @mixin content-width {
