@@ -12,6 +12,7 @@ html {
   line-height: 1.6; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-size: 62.5%;
+  height: 100%;
   font-family: Roboto,-apple-system,BlinkMacSystemFont,'游ゴシック体',YuGothic,'Yu Gothic Medium','Noto Sans JP',sans-serif;
   scroll-behavior:smooth;
 }
@@ -25,6 +26,7 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 /**
