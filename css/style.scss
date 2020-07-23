@@ -489,7 +489,7 @@ html {
         background-color: $smoke;
         color: $dark;
     
-        // header
+        // header sptab
         #header {
             display: block;
             .head {
@@ -639,9 +639,9 @@ html {
             // }
         }
     
-        //main
+        //main sptab
         #main {
-            @include width768;
+            @include width-sptab;
             font-size: 1.6rem;
     
             .main-inner {
@@ -941,9 +941,9 @@ html {
                 }
             }
         }
-        //footer
+        //footer sptab
         #footer {
-            @include width;
+            @include width-sptab;
             background-color: $darkblue;
             .footer-main {
                 .copyright {
