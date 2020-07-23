@@ -230,115 +230,799 @@
                             <div class="box cam-main">
                                 <div class="item-box 8 ">
                                     <h3 class="title-h3">大学始業日ランキング</h3>
-                                    <table class="campus">
-                                        <tr>
-                                            <th>No</th>
-                                            <th>大学名</th>
-                                            <th>開始日</th>
-                                            <th>地域</th>
-                                            <th>ホームページ</th>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>東京大学</td>
-                                            <td>4月7日</td>
-                                            <td>東京都</td>
-                                            <td><a
-                                                    href="https://www.u-tokyo.ac.jp/ja/students/reference/COVID-19-classes2020.html">https://www.u-tokyo.ac.jp/ja/students/reference/COVID-19-classes2020.html</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>国際基督大学</td>
-                                            <td>4月9日</td>
-                                            <td>東京都</td>
-                                            <td><a
-                                                    href="https://www.icu.ac.jp/news/2003201600.html">https://www.icu.ac.jp/news/2003201600.html</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>玉川大学</td>
-                                            <td>4月13日</td>
-                                            <td>東京都</td>
-                                            <td><a
-                                                    href="https://www.tamagawa.jp/university/introduction/2020covid-19.html">https://www.tamagawa.jp/university/introduction/2020covid-19.html</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>公立はこだて未来大学</td>
-                                            <td>4月20日</td>
-                                            <td>北海道</td>
-                                            <td><a
-                                                    href="https://www.fun.ac.jp/news/5596">https://www.fun.ac.jp/news/5596</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>東京工業大学</td>
-                                            <td>4月20日</td>
-                                            <td>東京都</td>
-                                            <td><a
-                                                    href="https://www.titech.ac.jp/enrolled/life/schedules/2020.html">https://www.titech.ac.jp/enrolled/life/schedules/2020.html</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>東京外国語大学</td>
-                                            <td>4月20日</td>
-                                            <td>東京都</td>
-                                            <td><a
-                                                    href="http://www.tufs.ac.jp/student/lesson_course/2020tufsedu.html">http://www.tufs.ac.jp/student/lesson_course/2020tufsedu.html</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>東北大学</td>
-                                            <td>4月20日</td>
-                                            <td>宮城県</td>
-                                            <td><a
-                                                    href="https://www.tohoku.ac.jp/japanese/">https://www.tohoku.ac.jp/japanese/</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>関西大学</td>
-                                            <td>4月20日</td>
-                                            <td>大阪府</td>
-                                            <td><a
-                                                    href="http://www.kansai-u.ac.jp/index.html">http://www.kansai-u.ac.jp/index.html</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>中央大学</td>
-                                            <td>4月22日</td>
-                                            <td>東京都</td>
-                                            <td><a
-                                                    href="https://www.chuo-u.ac.jp/news/2020/04/49159/">https://www.chuo-u.ac.jp/news/2020/04/49159/</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>津田塾大学</td>
-                                            <td>4月22日</td>
-                                            <td>東京都</td>
-                                            <td><a
-                                                    href="https://www.tsuda.ac.jp/news/2020/0416.html">https://www.tsuda.ac.jp/news/2020/0416.html</a>
-                                            </td>
-                                        </tr>
-                                    </table>
+
+                                    <div class="tab-panel">
+                                        <!--タブ-->
+                                        <ul class="tab-group">
+                                            <li class="tab tab-A is-active">1校〜10校</li>
+                                            <li class="tab tab-B">11校〜20校</li>
+                                            <li class="tab tab-C">21校〜30校</li>
+                                            <li class="tab tab-D">31校〜40校</li>
+                                            <li class="tab tab-E">41校〜50校</li>
+                                            <li class="tab tab-F">51校〜60校</li>
+                                            <li class="tab tab-G">61校〜70校</li>
+                                            <li class="tab tab-H">71校〜80校</li>
+                                            <li class="tab tab-I">81校〜</li>
+                                        </ul>
+
+                                        <!--タブを切り替えて表示するコンテンツ-->
+                                        <div class="panel-group">
+                                            <div class="panel tab-A is-show">
+                                                <!-- 1位から10位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>東京大学</td>
+                                                        <td>4月6日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.u-tokyo.ac.jp/ja/students/reference/COVID-19-classes2020.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>国際基督大学</td>
+                                                        <td>4月9日</td>
+                                                        <td>東京都</td>
+                                                        <td><a ref="https://www.icu.ac.jp/news/2003201600.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>玉川大学</td>
+                                                        <td>4月13日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.tamagawa.jp/university/introduction/2020covid-19.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>創価大学</td>
+                                                        <td>4月13日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>公立はこだて未来大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>北海道</td>
+                                                        <td><a href="https://www.fun.ac.jp/news/5596" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>東京工業大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.titech.ac.jp/enrolled/life/schedules/2020.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>東京外国語大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="http://www.tufs.ac.jp/student/lesson_course/2020tufsedu.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>東北大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>宮城県</td>
+                                                        <td><a href="https://www.tohoku.ac.jp/japanese/" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>関西大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>大阪府</td>
+                                                        <td><a href="http://www.kansai-u.ac.jp/index.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>デジタルハリウッド大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.dhw.ac.jp/news/2020_2q/?referrer=https%3A%2F%2Fwww.u-presscenter.jp%2F2020%2F06%2Fpost-43243.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-B">
+                                                <!-- 11位から20位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>学習院女子大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.gwc.gakushuin.ac.jp/news/2020/05/22020_4.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>昭和大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>東京都</td>
+                                                        <td><a ref="https://www.showa-u.ac.jp/news/nid00001219.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>明治学院大学</td>
+                                                        <td>4月20日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.meijigakuin.ac.jp/" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14</td>
+                                                        <td>中央大学</td>
+                                                        <td>4月22日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.chuo-u.ac.jp/news/2020/04/49159/" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14</td>
+                                                        <td>津田塾大学</td>
+                                                        <td>4月22日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.tsuda.ac.jp/news/2020/0416.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14</td>
+                                                        <td>東京経済大学</td>
+                                                        <td>4月22日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.u-presscenter.jp/2020/05/post-43598.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17</td>
+                                                        <td>成蹊大学</td>
+                                                        <td>4月24日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.seikei.ac.jp/university/important/2020/09257.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17</td>
+                                                        <td>昭和女子大学</td>
+                                                        <td>4月24日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.u-presscenter.jp/2020/04/post-43486.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>筑波大学</td>
+                                                        <td>4月27日</td>
+                                                        <td>茨城県</td>
+                                                        <td><a href="http://www.tsukuba.ac.jp/" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>埼玉大学</td>
+                                                        <td>4月27日</td>
+                                                        <td>埼玉県</td>
+                                                        <td><a href="http://www.saitama-u.ac.jp/" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-C">
+                                                <!-- 21位から30位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>東洋大学</td>
+                                                        <td>4月27日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>北翔大学</td>
+                                                        <td>4月27日</td>
+                                                        <td>北海道</td>
+                                                        <td><a href="https://www.hokusho-u.ac.jp/info/?i=2297" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19</td>
+                                                        <td>北星学園大学</td>
+                                                        <td>4月27日</td>
+                                                        <td>北海道</td>
+                                                        <td><a href="https://www.hokusei.ac.jp/covid-19/" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>24</td>
+                                                        <td>慶應義塾大学</td>
+                                                        <td>4月30日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.students.keio.ac.jp/com/class/schedule/academic-calendar.html#2020" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>24</td>
+                                                        <td>立教大学</td>
+                                                        <td>4月30日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>24</td>
+                                                        <td>桜美林大学</td>
+                                                        <td>4月30日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.u-presscenter.jp/2020/04/post-43544.html" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>27</td>
+                                                        <td>青山学院大学</td>
+                                                        <td>5月1日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>27</td>
+                                                        <td>東京理科大学</td>
+                                                        <td>5月1日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>27</td>
+                                                        <td>東京理科大学</td>
+                                                        <td>5月1日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30</td>
+                                                        <td>札幌学院大学</td>
+                                                        <td>5月4日</td>
+                                                        <td>北海道</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-D">
+                                                <!-- 31位から40位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30</td>
+                                                        <td>共立女子大学</td>
+                                                        <td>5月4日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.gwc.gakushuin.ac.jp/news/2020/05/22020_4.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>千葉大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>千葉県</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>一橋大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>九州大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>福岡県</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>神戸大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>兵庫県</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>横浜国立大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>神奈川県</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>東京学芸大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>会津大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>福島県</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>立命館大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>京都府</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>茨城大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>茨城県</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-E">
+                                                <!-- 41位から50位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>お茶の水女子大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>東京薬科大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>日本女子大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>多摩大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>東京家政大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>國學院大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>北見工業大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>北海道</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>清水女子大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>白百合女子大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>32</td>
+                                                        <td>大妻女子大学</td>
+                                                        <td>5月7日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-F">
+                                                <!-- 51位から60位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>51</td>
+                                                        <td>駒沢大学</td>
+                                                        <td>5月8日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.komazawa-u.ac.jp/topics/2020/0415-9192.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>51</td>
+                                                        <td>産業能力大学</td>
+                                                        <td>5月8日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.sanno.ac.jp/topnews/20200424_01.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>北海道大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>北海道</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>電気通信大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.uec.ac.jp/news/announcement/2020/20200428_2535.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>東京芸術大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.geidai.ac.jp/news/2020041887736.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>東京農工大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.tuat.ac.jp/department/agriculture/COVID-19_Schedule.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>東京都立大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.tmu.ac.jp/news/topics/24000.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>学習院大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.univ.gakushuin.ac.jp/life/onlineclass.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>早稲田大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>芝浦工業大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.shibaura-it.ac.jp/news/nid00001053.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-G">
+                                                <!-- 61位から70位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>国士舘大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.kokushikan.ac.jp/news/details_14755.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>恵泉女学院大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.keisen.ac.jp/other/covid-18.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>専修大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.senshu-u.ac.jp/news/nid00000044.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>目白大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>東京農業大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.nodai.ac.jp/news/article/20200423-01/" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>二松学舎大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>帝京大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>東京工芸大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>武蔵大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>多摩美術大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-H">
+                                                <!-- 71位から80位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>大正大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.tais.ac.jp/emergency_area/65920/" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>ヤマザキ動物看護大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>札幌大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.sapporo-u.ac.jp/news/su-news/2020/05082834.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>北海道医療大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="http://www.hoku-iryo-u.ac.jp/~web/news/index.php/view/1592" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>53</td>
+                                                        <td>北海道科学大学</td>
+                                                        <td>5月11日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.hus.ac.jp/hit_topics/2020/05/202005013979.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>76</td>
+                                                        <td>同志社大学</td>
+                                                        <td>5月12日</td>
+                                                        <td>京都府</td>
+                                                        <td><a href="https://www.doshisha.ac.jp/" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>77</td>
+                                                        <td>実践女子大学</td>
+                                                        <td>5月13日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.jissen.ac.jp/notice/year2020/20200525_news2.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>77</td>
+                                                        <td>成城大学</td>
+                                                        <td>5月13日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.seijo.ac.jp/students/inner-info/jtmo42000000u1ho.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>77</td>
+                                                        <td>立正大学</td>
+                                                        <td>5月13日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>77</td>
+                                                        <td>酪農学園大学</td>
+                                                        <td>5月14日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.rakuno.ac.jp/archives/8960.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="panel tab-I">
+                                                <!-- 81位から90位 -->
+                                                <table class="campus">
+                                                    <tr>
+                                                        <th>順位</th>
+                                                        <th>大学名</th>
+                                                        <th>開始日</th>
+                                                        <th>都道府県</th>
+                                                        <th>ホームページ</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>81</td>
+                                                        <td>亜細亜大学</td>
+                                                        <td>5月15日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.asia-u.ac.jp/students/news/2020/04/6989/" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>82</td>
+                                                        <td>東京都市大学</td>
+                                                        <td>5月18日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>82</td>
+                                                        <td>駒沢女子大学</td>
+                                                        <td>5月18日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.komajo.ac.jp/uni/news_uni/news_uni_20007.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>82</td>
+                                                        <td>札幌保険医療大学</td>
+                                                        <td>5月18日</td>
+                                                        <td>北海道</td>
+                                                        <td><a href="https://www.sapporo-hokeniryou-u.ac.jp/news/135" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>85</td>
+                                                        <td>大東文化大学</td>
+                                                        <td>5月21日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.daito.ac.jp/news/details_29449.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>86</td>
+                                                        <td>上智大学</td>
+                                                        <td>5月25日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="https://www.sophia.ac.jp/jpn/news/PR/news20200414.html" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>86</td>
+                                                        <td>拓殖大学</td>
+                                                        <td>5月25日</td>
+                                                        <td>東京都</td>
+                                                        <td><a href="" target="_blank">詳しく見る</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="info">
+                        <p class="info-title">データソース</p>
+                        <p class="info-text">このサイトは「<span><a href="https://www.soumu.go.jp/johotsusintokei/index.html"
+                                    target="_blank">総務省</a></span>＞<span><a
+                                    href="https://www.soumu.go.jp/johotsusintokei/statistics/index.html">統計調査データ</a></span>＞<span><a
+                                    href="https://www.soumu.go.jp/johotsusintokei/statistics/statistics05.html">通信利用動向調査</a></span>」を参照しています。
+                            <br>一部、私が独自に調査しまとめた情報も含まれています。</p>
+                        <p class="info-title">グラフ描画</p>
+                        <p class="info-text"><a href="https://www.chartjs.org/" target="_blank">Chart.js</a></p>
+                        <p class="info-title">更新履歴・ソースコード</p>
+                        <p class="info-text"><a href="https://github.com/takataka000/human-interface02"
+                                target="_blank">GitHub</a></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer id="footer">
-        <div class="copyright">© 2020 Takato Komatsuzaki</div>
+        <div class="footer-main">
+            <div class="copyright">© 2020 Takato Komatsuzaki</div>
+        </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="js/main.js"></script>
