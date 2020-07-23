@@ -639,9 +639,9 @@ html {
             }
         }
     
-        //main sptab
+        //main widetab
         #main {
-            @include width-sptab;
+            @include width-widetab;
             font-size: 1.6rem;
     
             .main-inner {
@@ -827,11 +827,13 @@ html {
                                         //タブ
                                         .tab-panel {
                                             margin-top: 10px;
+                                            overflow-x: scroll;
                                         }
                                         .tab-group{
                                             display: flex;
                                             justify-content: center;
                                             margin: 0 15px;
+                                            width: 1000px;
                                         }
                                         .tab{
                                             flex-grow: 1;
@@ -844,9 +846,8 @@ html {
                                             cursor:pointer;
                                         }
                                         .panel-group{
-                                            // border:solid 1px #CCC;
-                                            border-top:none;
-                                            // background:#eee;
+                                            // border-top:none;
+                                            width: 1000px;
                                         }
                                         .panel{
                                             display:none;
@@ -940,9 +941,9 @@ html {
                 }
             }
         }
-        //footer sptab
+        //footer widetab
         #footer {
-            @include width-sptab;
+            @include width-widetab;
             background-color: $darkblue;
             .footer-main {
                 .copyright {

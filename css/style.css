@@ -681,7 +681,8 @@ html {
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .title-h3 {
                       margin: 0 10px; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .tab-panel {
-                      margin-top: 10px; }
+                      margin-top: 10px;
+                      overflow-x: scroll; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .tab-group {
                       display: -webkit-box;
                       display: -ms-flexbox;
@@ -689,7 +690,8 @@ html {
                       -webkit-box-pack: center;
                       -ms-flex-pack: center;
                       justify-content: center;
-                      margin: 0 15px; }
+                      margin: 0 15px;
+                      width: 1000px; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .tab {
                       -webkit-box-flex: 1;
                       -ms-flex-positive: 1;
@@ -702,7 +704,7 @@ html {
                       color: #000;
                       cursor: pointer; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel-group {
-                      border-top: none; }
+                      width: 1000px; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel {
                       display: none; }
                       html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus {
