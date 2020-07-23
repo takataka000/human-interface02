@@ -156,8 +156,8 @@ html {
         html #main .main-inner__top .top {
           background-image: url(../img/stay_home.svg);
           background-repeat: no-repeat;
-          background-position: right;
-          background-size: contain;
+          background-position: right bottom;
+          background-size: 400px;
           padding-bottom: 30px;
           border-bottom: 2px solid #ffffff;
           -webkit-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
@@ -550,17 +550,18 @@ html {
           html #main .main-inner__top .top {
             background-image: url(../img/stay_home.svg);
             background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
+            background-position: right bottom;
+            background-size: 300px;
             padding-bottom: 30px;
             border-bottom: 2px solid #ffffff;
             -webkit-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3); }
             html #main .main-inner__top .top .top-text {
-              width: 60%;
+              width: 100%;
               max-width: 800px;
               margin-top: 30px;
-              padding: 0 0 20px 0; }
+              padding: 20px;
+              background-color: rgba(255, 255, 255, 0.7); }
           html #main .main-inner__top .graph {
             margin-top: 30px;
             padding-bottom: 50px;
@@ -764,7 +765,7 @@ html {
                     background-color: #DEA832;
                     z-index: -1; }
             html #main .main-inner__top .graph .info {
-              width: 50%;
+              width: 80%;
               margin: 0 auto;
               padding: 40px 0 20px 0; }
               html #main .main-inner__top .graph .info .info-title {

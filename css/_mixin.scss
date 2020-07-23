@@ -18,7 +18,7 @@
   flex-wrap: wrap;
 }
 
-//～640pxまで (500px)
+//～640pxまで
 @mixin sp {
   @media screen and (max-width: map-get($breakpoint, sp) + px) {
     @content;
