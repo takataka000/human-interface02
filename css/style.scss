@@ -353,11 +353,13 @@ html {
                                     //タブ
                                     .tab-panel {
                                         margin-top: 10px;
+                                        overflow-x: scroll;
                                     }
                                     .tab-group{
                                         display: flex;
                                         justify-content: center;
                                         margin: 0 15px;
+                                        min-width: 970px;
                                     }
                                     .tab{
                                         flex-grow: 1;
@@ -370,9 +372,8 @@ html {
                                         cursor:pointer;
                                     }
                                     .panel-group{
-                                        // border:solid 1px #CCC;
                                         border-top:none;
-                                        // background:#eee;
+                                        min-width: 1000px;
                                     }
                                     .panel{
                                         display:none;
@@ -833,7 +834,7 @@ html {
                                             display: flex;
                                             justify-content: center;
                                             margin: 0 15px;
-                                            width: 1000px;
+                                            width: 970px;
                                         }
                                         .tab{
                                             flex-grow: 1;
