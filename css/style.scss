@@ -182,7 +182,6 @@ html {
                         max-width: 800px;
                         margin-top: 30px;
                         padding: 0 0 20px 0;
-                        // background-color: rgba(255, 255, 255, 0.5);
                     }
                 }
 
@@ -218,7 +217,7 @@ html {
 
                                 .item-box {
                                     padding: 10px;
-                                    margin-top: 30px; //レスポンシブ対応にしたい
+                                    margin-top: 30px;
                                     background-color: $white;
                                     border-radius: 15px;
 
@@ -232,12 +231,6 @@ html {
                                         background-color: $smoke;
                                         border-radius: 15px;
                                     }
-
-                                    // .canvas-text {
-                                    //     width: 98%;
-                                    //     padding: 10px;
-                                    //     margin: 20px auto 0;
-                                    // }
                                 }
 
                                 .active {
@@ -271,7 +264,7 @@ html {
 
                                 .item-box {
                                     padding: 10px;
-                                    margin-top: 30px; //レスポンシブ対応にしたい
+                                    margin-top: 30px;
                                     background-color: $white;
                                     border-radius: 15px;
 
@@ -285,12 +278,6 @@ html {
                                         background-color: $smoke;
                                         border-radius: 15px;
                                     }
-
-                                    // .canvas-text {
-                                    //     width: 98%;
-                                    //     padding: 10px;
-                                    //     margin: 20px auto 0;
-                                    // }
                                 }
 
                                 .active {
@@ -328,8 +315,6 @@ html {
                             }
                         }
                         &__item-3 {
-                            // width: calc(100% / 1.5 - 1.5%);
-                            // min-width: 300px;
                             width: 100%;
 
                             .box {
@@ -401,16 +386,31 @@ html {
                                                 background-color: $smoke;
                                                 border-radius: 50px;
                                                 padding: 5px 15px;
-                                                // &:first-child {
-                                                //     width: 10px;
-                                                // }
                                             }
                                             a {
                                                 color: $dark;
                                                 font-size: 1.4rem;
+                                                position: relative;
+                                            }
+                                            a:before {
+                                                position: absolute;
+                                                content: '';
+                                                display: block;
+                                                background-image: url(../img/open_in_new-24px.svg);
+                                                background-size: contain;
+                                                background-repeat: no-repeat;
+                                                width: 80%;
+                                                height: 80%;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                right: -100px;
                                             }
                                             a:hover {
-                                                color: $darkblue;
+                                                color: #43BACC;
+                                                transition: all 0.2s ease-out;
+                                                &:before {
+                                                    background-image: url(../img/open_in_new-24px_blue.svg);
+                                                }
                                             }
                                         }
                                     }
@@ -456,7 +456,27 @@ html {
                         .info-text {
                             font-weight: right;
                             a {
-                                color: $darkblue;
+                                color: $dark;
+                            }
+                            a:hover {
+                                color: #43BACC;
+                                transition: all 0.2s ease-out;
+                            }
+                        }
+                        .info-flex {
+                            display: flex;
+                            justify-content: left;
+                            flex-wrap: wrap;
+                            dl {
+                                width: 20%;
+                                text-align: center;
+                                align-items: center;
+                                dt {
+                                    img {
+                                        margin: 0 auto;
+                                        width: 40%;
+                                    }
+                                }
                             }
                         }
                     }
@@ -479,7 +499,7 @@ html {
     }
 }
 
-//media
+//mediaクエリ widetab for(tablet)
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -884,8 +904,25 @@ html {
                                                     color: $dark;
                                                     font-size: 1.4rem;
                                                 }
+                                                a:before {
+                                                    position: absolute;
+                                                    content: '';
+                                                    display: block;
+                                                    background-image: url(../img/open_in_new-24px.svg);
+                                                    background-size: contain;
+                                                    background-repeat: no-repeat;
+                                                    width: 80%;
+                                                    height: 80%;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    right: -100px;
+                                                }
                                                 a:hover {
-                                                    color: $darkblue;
+                                                    color: #43BACC;
+                                                    transition: all 0.2s ease-out;
+                                                    &:before {
+                                                        background-image: url(../img/open_in_new-24px_blue.svg);
+                                                    }
                                                 }
                                             }
                                         }
@@ -931,7 +968,29 @@ html {
                             .info-text {
                                 font-weight: right;
                                 a {
-                                    color: $darkblue;
+                                    color: $dark;
+                                }
+                                a:hover {
+                                    color: #43BACC;
+                                    transition: 0.2s ease-in-out;
+                                }
+                            }
+                            .info-flex {
+                                display: flex;
+                                justify-content: left;
+                                flex-wrap: wrap;
+                                dl {
+                                    width: 20%;
+                                    min-width: 50px;
+                                    text-align: center;
+                                    align-items: center;
+                                    dt {
+                                        img {
+                                            margin: 0 auto;
+                                            width: 40%;
+                                            min-width: 40px;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -955,5 +1014,524 @@ html {
     }
 }
 
+
+//mediaクエリ widetab for(sp)
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 @include iphone {
+    html {
+        width: 100%;
+        background-color: $smoke;
+        color: $dark;
+        h1 {
+            font-size: 2.8rem;
+        }
+        h2 {
+            font-size: 2.0rem;
+        }
+
+        // header sp
+        #header {
+            display: none;
+            .head {
+                overflow: scroll;
+                background-color: $white;
+                position: fixed;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+                width: 300px;
+                height: 100vh;
+                border-radius: 0 10px 10px 0;
+                box-shadow: $shadow;
+                .header-top {
+                    width: 100%;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    display: block;
+                    .gnav {
+                        width: 250px;
+                        margin: 0 auto;
+                        &__title {
+                            font-size: 2.0rem;
+                            &:not(:first-child) {
+                                border-top: 2px solid $smoke;
+                                margin-top: 10px;
+                                padding-top: 10px;
+                            }
+                        }
+                        &__item {
+                            display: block;
+                            padding: 10px 0 10px 25px;
+                            font-size: 1.4rem;
+                            position: relative;
+                            border-radius: 25px;
+                            &:not(:first-child) {
+                                margin-top: 10px;
+                            }
+    
+                            .gnav__item-link {
+                                color: $dark;
+                                transition: 0.4s ease-in-out;
+                            }
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 0%;
+                                height: 100%;
+                                border-radius: 50px;
+                                background-color: $darkblue;
+                                transition: 0.4s ease-in-out;
+                                z-index: -1;
+                            }
+    
+                            &:hover {
+                                .gnav__item-link {
+                                    color: $white;
+                                    transition: 0.3s ease-in-out;
+                                }
+                                &:before {
+                                    width: 100%;
+                                }
+                                color: $white;
+                            }
+                        }
+                        .internet {
+                            display: block;
+                            position: relative;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: #43BACC;
+                                z-index: 0;
+                            }
+                        }
+                        .work {
+                            display: block;
+                            position: relative;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: #ADD9C3;
+                                z-index: 0;
+                            }
+                        }
+                        .ec {
+                            display: block;
+                            position: relative;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: #C8D947;
+                                z-index: 0;
+                            }
+                        }
+                        .cam {
+                            display: block;
+                            position: relative;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: #DEA832;
+                                z-index: 0;
+                            }
+                        }
+    
+                        .active {
+                            background-color: $darkblue;
+    
+                            .gnav__item-link {
+                                color: $white;
+                            }
+                        }
+                    }
+                    @include flex;
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+    
+        //main sp
+        #main {
+            @include width-sp;
+            font-size: 1.6rem;
+    
+            .main-inner {
+                width: 90%;
+                // max-width: 750px;
+                margin: 0 auto;
+    
+                &__top {
+                    margin-top: 30px;
+    
+                    .top {
+                        background-image: url(../img/stay_home.svg);
+                        background-repeat: no-repeat;
+                        background-position: right bottom;
+                        background-size: 300px;
+                        padding-bottom: 30px;
+                        border-bottom: 2px solid $white;
+                        box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
+                        .top-text {
+                            width: 94%;
+                            margin: 0 auto;
+                            margin-top: 30px;
+                            padding: 10px;
+                            background-color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+    
+                    .graph {
+                        margin-top: 30px;
+                        padding-bottom: 50px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        border-bottom: 2px solid $white;
+                        box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
+    
+                        .graph-intro {
+                            width: 100%;
+                            padding-top: 20px;
+                        }
+    
+                        .graph-flexbox {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: top;
+                            margin-top: 20px;
+    
+                            &__item {
+                                width: calc(100% - 1.5%);
+                                // min-width: 300px;
+    
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+    
+                                    .item-box {
+                                        padding: 10px;
+                                        margin-top: 30px; //レスポンシブ対応にしたい
+                                        background-color: $white;
+                                        border-radius: 15px;
+    
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+    
+                                        .canvas-item {
+                                            width: 100%;
+                                            margin: 10px auto 0;
+                                            background-color: $smoke;
+                                            border-radius: 15px;
+                                        }
+    
+                                        // .canvas-text {
+                                        //     width: 98%;
+                                        //     padding: 10px;
+                                        //     margin: 20px auto 0;
+                                        // }
+                                    }
+    
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+                                .internet-main {
+                                    display: block;
+                                    position: relative;
+                                    &:before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: #43BACC;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                            &__item-2 {
+                                width: calc(100% - 1.5%);
+                                // min-width: 300px;
+    
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+    
+                                    .item-box {
+                                        padding: 10px;
+                                        margin-top: 30px; //レスポンシブ対応にしたい
+                                        background-color: $white;
+                                        border-radius: 15px;
+    
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+    
+                                        .canvas-item {
+                                            width: 100%;
+                                            margin: 10px auto 0;
+                                            background-color: $smoke;
+                                            border-radius: 15px;
+                                        }
+                                    }
+    
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+                                .work-main {
+                                    display: block;
+                                    position: relative;
+                                    &:before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: #ADD9C3;
+                                        z-index: -1;
+                                    }
+                                }
+                                .ec-main {
+                                    display: block;
+                                    position: relative;
+                                    &:before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: #C8D947;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                            &__item-3 {
+                                // min-width: 300px;
+                                width: 100%;
+    
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+    
+                                    .item-box {
+                                        padding: 10px 15px 15px 15px;
+                                        margin-top: 30px;
+                                        background-color: $white;
+                                        border-radius: 15px;
+    
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+    
+                                        //タブ
+                                        .tab-panel {
+                                            margin-top: 10px;
+                                            overflow-x: scroll;
+                                        }
+                                        .tab-group{
+                                            display: flex;
+                                            justify-content: center;
+                                            margin: 0 15px;
+                                            width: 970px;
+                                        }
+                                        .tab{
+                                            flex-grow: 1;
+                                            padding:5px;
+                                            list-style:none;
+                                            border-radius: 15px 15px 0 0;
+                                            text-align:center;
+                                            background-color: $smoke;
+                                            color: $dark;
+                                            cursor:pointer;
+                                        }
+                                        .panel-group{
+                                            // border-top:none;
+                                            width: 1000px;
+                                        }
+                                        .panel{
+                                            display:none;
+                                            .campus {
+                                                width: 100%;
+                                                margin: 0 auto;
+                                                padding: 15px 0;
+                                                border-collapse: separate;
+                                                border-spacing: 20px 10px;
+                                                color: $dark !important;
+                                                background-color: $white;
+                                                border-radius: 15px;
+                                                border: 1px solid #F7F7F8;
+                                                box-shadow: $shadow;
+                                                th {
+                                                    background-color: $smoke;
+                                                    border-radius: 100px;
+                                                    padding: 5px 15px;
+                                                    &:first-child {
+                                                        width: 40px;
+                                                    }
+                                                    &:nth-child(2) {
+                                                        width: 200px;
+                                                    }
+                                                }
+                                                td {
+                                                    text-align: center;
+                                                    background-color: $smoke;
+                                                    border-radius: 50px;
+                                                    padding: 5px 15px;
+                                                    // &:first-child {
+                                                    //     width: 10px;
+                                                    // }
+                                                }
+                                                a {
+                                                    color: $dark;
+                                                    font-size: 1.4rem;
+                                                }
+                                                a:before {
+                                                    position: absolute;
+                                                    content: '';
+                                                    display: block;
+                                                    background-image: url(../img/open_in_new-24px.svg);
+                                                    background-size: contain;
+                                                    background-repeat: no-repeat;
+                                                    width: 80%;
+                                                    height: 80%;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    right: -100px;
+                                                }
+                                                a:hover {
+                                                    color: #43BACC;
+                                                    transition: all 0.2s ease-out;
+                                                    &:before {
+                                                        background-image: url(../img/open_in_new-24px_blue.svg);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .tab.is-active{
+                                            background: #DEA832;
+                                            color:#FFF;
+                                            transition: all 0.2s ease-out;
+                                        }
+                                        .panel.is-show{
+                                            display:block;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+                                .cam-main {
+                                    display: block;
+                                    position: relative;
+                                    &:before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: #DEA832;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                        }
+                        .info {
+                            width: 80%;
+                            margin: 0 auto;
+                            padding: 40px 0 20px 0;
+                            .info-title {
+                                margin-top: 20px;
+                                font-weight: bold;
+                            }
+                            .info-text {
+                                font-weight: right;
+                                a {
+                                    color: $dark;
+                                }
+                                a:hover {
+                                    color: #43BACC;
+                                    transition: 0.2s ease-in-out;
+                                }
+                            }
+                            .info-flex {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                dl {
+                                    width: 34%;
+                                    min-width: 50px;
+                                    text-align: center;
+                                    align-items: center;
+                                    dt {
+                                        img {
+                                            margin: 0 auto;
+                                            width: 40%;
+                                            min-width: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //footer sp
+        #footer {
+            @include width-sp;
+            background-color: $darkblue;
+            .footer-main {
+                .copyright {
+                    padding: 8px;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: $white;
+                }
+            }
+        }
+    }
 }
