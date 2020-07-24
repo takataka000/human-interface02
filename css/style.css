@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html {
   width: 100%;
-  background-color: #F7F7F8;
+  background-color: #f7f7f8;
   color: #000; }
   html #header {
     display: block; }
@@ -38,7 +38,7 @@ html {
           html #header .head .header-top .gnav__title {
             font-size: 2rem; }
             html #header .head .header-top .gnav__title:not(:first-child) {
-              border-top: 2px solid #F7F7F8;
+              border-top: 2px solid #f7f7f8;
               margin-top: 10px;
               padding-top: 10px; }
           html #header .head .header-top .gnav__item {
@@ -62,7 +62,7 @@ html {
               width: 0%;
               height: 100%;
               border-radius: 50px;
-              background-color: #2F2D51;
+              background-color: #2f2d51;
               -webkit-transition: 0.4s ease-in-out;
               -o-transition: 0.4s ease-in-out;
               transition: 0.4s ease-in-out;
@@ -141,7 +141,7 @@ html {
               background-color: #dea832;
               z-index: 0; }
           html #header .head .header-top .gnav .active {
-            background-color: #2F2D51; }
+            background-color: #2f2d51; }
             html #header .head .header-top .gnav .active .gnav__item-link {
               color: #ffffff; }
   html #main {
@@ -168,6 +168,14 @@ html {
             max-width: 800px;
             margin-top: 30px;
             padding: 0 0 20px 0; }
+            html #main .main-inner__top .top .top-text a {
+              color: #000;
+              text-decoration: underline; }
+              html #main .main-inner__top .top .top-text a:hover {
+                color: #43bacc;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out; }
         html #main .main-inner__top .graph {
           margin-top: 30px;
           padding-bottom: 50px;
@@ -178,7 +186,7 @@ html {
           -webkit-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3); }
           html #main .main-inner__top .graph .graph-intro {
-            width: 60%;
+            width: 100%;
             padding-top: 20px; }
           html #main .main-inner__top .graph .graph-flexbox {
             width: 100%;
@@ -212,10 +220,10 @@ html {
                   html #main .main-inner__top .graph .graph-flexbox__item .box .item-box .canvas-item {
                     width: 100%;
                     margin: 10px auto 0;
-                    background-color: #F7F7F8;
+                    background-color: #f7f7f8;
                     border-radius: 15px; }
                 html #main .main-inner__top .graph .graph-flexbox__item .box .active {
-                  background-color: #2F2D51;
+                  background-color: #2f2d51;
                   color: #ffffff; }
               html #main .main-inner__top .graph .graph-flexbox__item .internet-main {
                 display: block;
@@ -247,10 +255,10 @@ html {
                   html #main .main-inner__top .graph .graph-flexbox__item-2 .box .item-box .canvas-item {
                     width: 100%;
                     margin: 10px auto 0;
-                    background-color: #F7F7F8;
+                    background-color: #f7f7f8;
                     border-radius: 15px; }
                 html #main .main-inner__top .graph .graph-flexbox__item-2 .box .active {
-                  background-color: #2F2D51;
+                  background-color: #2f2d51;
                   color: #ffffff; }
               html #main .main-inner__top .graph .graph-flexbox__item-2 .work-main {
                 display: block;
@@ -310,7 +318,7 @@ html {
                     list-style: none;
                     border-radius: 15px 15px 0 0;
                     text-align: center;
-                    background-color: #F7F7F8;
+                    background-color: #f7f7f8;
                     color: #000;
                     cursor: pointer; }
                   html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel-group {
@@ -331,7 +339,7 @@ html {
                       -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.01);
                       box-shadow: 0 0 9px rgba(0, 0, 0, 0.01); }
                       html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus th {
-                        background-color: #F7F7F8;
+                        background-color: #f7f7f8;
                         border-radius: 100px;
                         padding: 5px 15px; }
                         html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus th:first-child {
@@ -340,7 +348,7 @@ html {
                           width: 200px; }
                       html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus td {
                         text-align: center;
-                        background-color: #F7F7F8;
+                        background-color: #f7f7f8;
                         border-radius: 50px;
                         padding: 5px 15px; }
                       html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus a {
@@ -370,14 +378,14 @@ html {
                           background-image: url(../img/open_in_new-24px_blue.svg); }
                   html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .tab.is-active {
                     background: #dea832;
-                    color: #fff;
+                    color: #ffffff;
                     -webkit-transition: all 0.2s ease-out;
                     -o-transition: all 0.2s ease-out;
                     transition: all 0.2s ease-out; }
                   html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel.is-show {
                     display: block; }
                 html #main .main-inner__top .graph .graph-flexbox__item-3 .box .active {
-                  background-color: #2F2D51;
+                  background-color: #2f2d51;
                   color: #ffffff; }
               html #main .main-inner__top .graph .graph-flexbox__item-3 .cam-main {
                 display: block;
@@ -428,7 +436,7 @@ html {
   html #footer {
     width: calc(100% - 300px);
     margin-left: 300px;
-    background-color: #2F2D51; }
+    background-color: #2f2d51; }
     html #footer .footer-main .copyright {
       padding: 8px;
       font-size: 1rem;
@@ -438,7 +446,7 @@ html {
 @media screen and (max-width: 1000px) {
   html {
     width: 100%;
-    background-color: #F7F7F8;
+    background-color: #f7f7f8;
     color: #000; }
     html #header {
       display: block; }
@@ -476,7 +484,7 @@ html {
             html #header .head .header-top .gnav__title {
               font-size: 2rem; }
               html #header .head .header-top .gnav__title:not(:first-child) {
-                border-top: 2px solid #F7F7F8;
+                border-top: 2px solid #f7f7f8;
                 margin-top: 10px;
                 padding-top: 10px; }
             html #header .head .header-top .gnav__item {
@@ -500,7 +508,7 @@ html {
                 width: 0%;
                 height: 100%;
                 border-radius: 50px;
-                background-color: #2F2D51;
+                background-color: #2f2d51;
                 -webkit-transition: 0.4s ease-in-out;
                 -o-transition: 0.4s ease-in-out;
                 transition: 0.4s ease-in-out;
@@ -579,7 +587,7 @@ html {
                 background-color: #dea832;
                 z-index: 0; }
             html #header .head .header-top .gnav .active {
-              background-color: #2F2D51; }
+              background-color: #2f2d51; }
               html #header .head .header-top .gnav .active .gnav__item-link {
                 color: #ffffff; }
     html #main {
@@ -651,10 +659,10 @@ html {
                     html #main .main-inner__top .graph .graph-flexbox__item .box .item-box .canvas-item {
                       width: 100%;
                       margin: 10px auto 0;
-                      background-color: #F7F7F8;
+                      background-color: #f7f7f8;
                       border-radius: 15px; }
                   html #main .main-inner__top .graph .graph-flexbox__item .box .active {
-                    background-color: #2F2D51;
+                    background-color: #2f2d51;
                     color: #ffffff; }
                 html #main .main-inner__top .graph .graph-flexbox__item .internet-main {
                   display: block;
@@ -686,10 +694,10 @@ html {
                     html #main .main-inner__top .graph .graph-flexbox__item-2 .box .item-box .canvas-item {
                       width: 100%;
                       margin: 10px auto 0;
-                      background-color: #F7F7F8;
+                      background-color: #f7f7f8;
                       border-radius: 15px; }
                   html #main .main-inner__top .graph .graph-flexbox__item-2 .box .active {
-                    background-color: #2F2D51;
+                    background-color: #2f2d51;
                     color: #ffffff; }
                 html #main .main-inner__top .graph .graph-flexbox__item-2 .work-main {
                   display: block;
@@ -749,7 +757,7 @@ html {
                       list-style: none;
                       border-radius: 15px 15px 0 0;
                       text-align: center;
-                      background-color: #F7F7F8;
+                      background-color: #f7f7f8;
                       color: #000;
                       cursor: pointer; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel-group {
@@ -769,7 +777,7 @@ html {
                         -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.01);
                         box-shadow: 0 0 9px rgba(0, 0, 0, 0.01); }
                         html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus th {
-                          background-color: #F7F7F8;
+                          background-color: #f7f7f8;
                           border-radius: 100px;
                           padding: 5px 15px; }
                           html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus th:first-child {
@@ -778,7 +786,7 @@ html {
                             width: 200px; }
                         html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus td {
                           text-align: center;
-                          background-color: #F7F7F8;
+                          background-color: #f7f7f8;
                           border-radius: 50px;
                           padding: 5px 15px; }
                         html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus a {
@@ -807,14 +815,14 @@ html {
                             background-image: url(../img/open_in_new-24px_blue.svg); }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .tab.is-active {
                       background: #dea832;
-                      color: #fff;
+                      color: #ffffff;
                       -webkit-transition: all 0.2s ease-out;
                       -o-transition: all 0.2s ease-out;
                       transition: all 0.2s ease-out; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel.is-show {
                       display: block; }
                   html #main .main-inner__top .graph .graph-flexbox__item-3 .box .active {
-                    background-color: #2F2D51;
+                    background-color: #2f2d51;
                     color: #ffffff; }
                 html #main .main-inner__top .graph .graph-flexbox__item-3 .cam-main {
                   display: block;
@@ -867,7 +875,7 @@ html {
     html #footer {
       width: calc(100% - 300px);
       margin-left: 300px;
-      background-color: #2F2D51; }
+      background-color: #2f2d51; }
       html #footer .footer-main .copyright {
         padding: 8px;
         font-size: 1rem;
@@ -877,7 +885,7 @@ html {
 @media screen and (max-width: 600px) {
   html {
     width: 100%;
-    background-color: #F7F7F8;
+    background-color: #f7f7f8;
     color: #000; }
     html h1 {
       font-size: 2.8rem; }
@@ -968,7 +976,7 @@ html {
           html #header .head .header-top .gnav__title {
             font-size: 2rem; }
             html #header .head .header-top .gnav__title:not(:first-child) {
-              border-top: 2px solid #F7F7F8;
+              border-top: 2px solid #f7f7f8;
               margin-top: 10px;
               padding-top: 10px; }
           html #header .head .header-top .gnav__item {
@@ -992,7 +1000,7 @@ html {
               width: 0%;
               height: 100%;
               border-radius: 50px;
-              background-color: #2F2D51;
+              background-color: #2f2d51;
               -webkit-transition: 0.4s ease-in-out;
               -o-transition: 0.4s ease-in-out;
               transition: 0.4s ease-in-out;
@@ -1071,7 +1079,7 @@ html {
               background-color: #dea832;
               z-index: 0; }
           html #header .head .header-top .gnav .active {
-            background-color: #2F2D51; }
+            background-color: #2f2d51; }
             html #header .head .header-top .gnav .active .gnav__item-link {
               color: #ffffff; }
     html #main {
@@ -1141,10 +1149,10 @@ html {
                     html #main .main-inner__top .graph .graph-flexbox__item .box .item-box .canvas-item {
                       width: 100%;
                       margin: 10px auto 0;
-                      background-color: #F7F7F8;
+                      background-color: #f7f7f8;
                       border-radius: 15px; }
                   html #main .main-inner__top .graph .graph-flexbox__item .box .active {
-                    background-color: #2F2D51;
+                    background-color: #2f2d51;
                     color: #ffffff; }
                 html #main .main-inner__top .graph .graph-flexbox__item .internet-main {
                   display: block;
@@ -1175,10 +1183,10 @@ html {
                     html #main .main-inner__top .graph .graph-flexbox__item-2 .box .item-box .canvas-item {
                       width: 100%;
                       margin: 10px auto 0;
-                      background-color: #F7F7F8;
+                      background-color: #f7f7f8;
                       border-radius: 15px; }
                   html #main .main-inner__top .graph .graph-flexbox__item-2 .box .active {
-                    background-color: #2F2D51;
+                    background-color: #2f2d51;
                     color: #ffffff; }
                 html #main .main-inner__top .graph .graph-flexbox__item-2 .work-main {
                   display: block;
@@ -1238,7 +1246,7 @@ html {
                       list-style: none;
                       border-radius: 15px 15px 0 0;
                       text-align: center;
-                      background-color: #F7F7F8;
+                      background-color: #f7f7f8;
                       color: #000;
                       cursor: pointer; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel-group {
@@ -1258,7 +1266,7 @@ html {
                         -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.01);
                         box-shadow: 0 0 9px rgba(0, 0, 0, 0.01); }
                         html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus th {
-                          background-color: #F7F7F8;
+                          background-color: #f7f7f8;
                           border-radius: 100px;
                           padding: 5px 15px; }
                           html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus th:first-child {
@@ -1267,7 +1275,7 @@ html {
                             width: 200px; }
                         html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus td {
                           text-align: center;
-                          background-color: #F7F7F8;
+                          background-color: #f7f7f8;
                           border-radius: 50px;
                           padding: 5px 15px; }
                         html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus a {
@@ -1296,14 +1304,14 @@ html {
                             background-image: url(../img/open_in_new-24px_blue.svg); }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .tab.is-active {
                       background: #dea832;
-                      color: #fff;
+                      color: #ffffff;
                       -webkit-transition: all 0.2s ease-out;
                       -o-transition: all 0.2s ease-out;
                       transition: all 0.2s ease-out; }
                     html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel.is-show {
                       display: block; }
                   html #main .main-inner__top .graph .graph-flexbox__item-3 .box .active {
-                    background-color: #2F2D51;
+                    background-color: #2f2d51;
                     color: #ffffff; }
                 html #main .main-inner__top .graph .graph-flexbox__item-3 .cam-main {
                   display: block;
@@ -1356,7 +1364,7 @@ html {
     html #footer {
       width: 100%;
       margin-left: 0;
-      background-color: #2F2D51; }
+      background-color: #2f2d51; }
       html #footer .footer-main .copyright {
         padding: 8px;
         font-size: 1rem;

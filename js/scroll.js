@@ -223,14 +223,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //ハンバーガー
-$(function() {
-  $('.hamburger').click(function() {
-      $(this).toggleClass('active');
+$(function () {
+  $(".hamburger").click(function () {
+    $(this).toggleClass("active");
 
-      if ($(this).hasClass('active')) {
-          $('.head').addClass('active');
-      } else {
-          $('.head').removeClass('active');
-      }
+    if ($(this).hasClass("active")) {
+      $(".head").addClass("active");
+    } else {
+      $(".head").removeClass("active");
+    }
   });
 });

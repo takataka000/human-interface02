@@ -3,558 +3,568 @@
 @import "common.scss";
 
 html {
-  // min-width: 769px;
-  width: 100%;
-  background-color: $smoke;
-  color: $dark;
+    // min-width: 769px;
+    width: 100%;
+    background-color: $smoke;
+    color: $dark;
 
-  // header
-  #header {
-    display: block;
-
-    // .toggle-title {
-    //     display: none;
-    // }
-
-    .head {
-      overflow: scroll;
-      background-color: $white;
-      position: fixed;
-      z-index: 1000;
-      top: 0;
-      left: 0;
-      width: 300px;
-      height: 100vh;
-      border-radius: 0 10px 10px 0;
-      box-shadow: $shadow;
-
-      .header-top {
-        width: 100%;
-        margin-top: 100px;
-        margin-bottom: 100px;
+    // header
+    #header {
         display: block;
 
-        .gnav {
-          width: 250px;
-          margin: 0 auto;
+        // .toggle-title {
+        //     display: none;
+        // }
 
-          &__title {
-            font-size: 2rem;
+        .head {
+            overflow: scroll;
+            background-color: $white;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100vh;
+            border-radius: 0 10px 10px 0;
+            box-shadow: $shadow;
 
-            &:not(:first-child) {
-              border-top: 2px solid $smoke;
-              margin-top: 10px;
-              padding-top: 10px;
-            }
-          }
-
-          &__item {
-            display: block;
-            padding: 10px 0 10px 25px;
-            font-size: 1.4rem;
-            position: relative;
-            border-radius: 25px;
-
-            &:not(:first-child) {
-              margin-top: 10px;
-            }
-
-            .gnav__item-link {
-              color: $dark;
-              transition: 0.4s ease-in-out;
-            }
-
-            &:before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 0%;
-              height: 100%;
-              border-radius: 50px;
-              background-color: $darkblue;
-              transition: 0.4s ease-in-out;
-              z-index: -1;
-            }
-
-            &:hover {
-              .gnav__item-link {
-                color: $white;
-                transition: 0.3s ease-in-out;
-              }
-
-              &:before {
+            .header-top {
                 width: 100%;
-              }
-
-              color: $white;
-            }
-          }
-
-          .internet {
-            display: block;
-            position: relative;
-
-            &:after {
-              content: "";
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              left: 8px;
-              width: 10px;
-              height: 10px;
-              border-radius: 5px;
-              background-color: #43bacc;
-              z-index: 0;
-            }
-          }
-
-          .work {
-            display: block;
-            position: relative;
-
-            &:after {
-              content: "";
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              left: 8px;
-              width: 10px;
-              height: 10px;
-              border-radius: 5px;
-              background-color: #add9c3;
-              z-index: 0;
-            }
-          }
-
-          .ec {
-            display: block;
-            position: relative;
-
-            &:after {
-              content: "";
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              left: 8px;
-              width: 10px;
-              height: 10px;
-              border-radius: 5px;
-              background-color: #c8d947;
-              z-index: 0;
-            }
-          }
-
-          .cam {
-            display: block;
-            position: relative;
-
-            &:after {
-              content: "";
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              left: 8px;
-              width: 10px;
-              height: 10px;
-              border-radius: 5px;
-              background-color: #dea832;
-              z-index: 0;
-            }
-          }
-
-          .active {
-            background-color: $darkblue;
-
-            .gnav__item-link {
-              color: $white;
-            }
-          }
-        }
-
-        @include flex;
-        flex-wrap: nowrap;
-      }
-    }
-  }
-
-  //main
-  #main {
-    @include width;
-    font-size: 1.6rem;
-
-    .main-inner {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-
-      &__top {
-        margin-top: 100px;
-
-        .top {
-          background-image: url(../img/stay_home.svg);
-          background-repeat: no-repeat;
-          background-position: right bottom;
-          background-size: 400px;
-          padding-bottom: 30px;
-          border-bottom: 2px solid $white;
-          box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
-
-          .top-text {
-            width: 60%;
-            max-width: 800px;
-            margin-top: 30px;
-            padding: 0 0 20px 0;
-          }
-        }
-
-        .graph {
-          margin-top: 30px;
-          padding-bottom: 50px;
-          width: 100%;
-          box-sizing: border-box;
-          border-bottom: 2px solid $white;
-          box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
-
-          .graph-intro {
-            width: 60%;
-            padding-top: 20px;
-          }
-
-          .graph-flexbox {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: top;
-            margin-top: 20px;
-
-            &__item {
-              width: calc(100% / 2 - 1.5%);
-              min-width: 300px;
-
-              .box {
-                width: 100%;
-                box-shadow: $shadow;
-                border-radius: 15px;
-
-                .item-box {
-                  padding: 10px;
-                  margin-top: 30px;
-                  background-color: $white;
-                  border-radius: 15px;
-
-                  .title-h3 {
-                    margin: 0 10px;
-                  }
-
-                  .canvas-item {
-                    width: 100%;
-                    margin: 10px auto 0;
-                    background-color: $smoke;
-                    border-radius: 15px;
-                  }
-                }
-
-                .active {
-                  background-color: $darkblue;
-                  color: $white;
-                }
-              }
-
-              .internet-main {
+                margin-top: 100px;
+                margin-bottom: 100px;
                 display: block;
-                position: relative;
 
-                &:before {
-                  content: "";
-                  position: absolute;
-                  top: 9px;
-                  left: -5px;
-                  width: 7px;
-                  height: 30px;
-                  background-color: #43bacc;
-                  z-index: -1;
-                }
-              }
-            }
+                .gnav {
+                    width: 250px;
+                    margin: 0 auto;
 
-            &__item-2 {
-              width: calc(100% / 2 - 1.5%);
-              min-width: 300px;
+                    &__title {
+                        font-size: 2rem;
 
-              .box {
-                width: 100%;
-                box-shadow: $shadow;
-                border-radius: 15px;
-
-                .item-box {
-                  padding: 10px;
-                  margin-top: 30px;
-                  background-color: $white;
-                  border-radius: 15px;
-
-                  .title-h3 {
-                    margin: 0 10px;
-                  }
-
-                  .canvas-item {
-                    width: 100%;
-                    margin: 10px auto 0;
-                    background-color: $smoke;
-                    border-radius: 15px;
-                  }
-                }
-
-                .active {
-                  background-color: $darkblue;
-                  color: $white;
-                }
-              }
-
-              .work-main {
-                display: block;
-                position: relative;
-
-                &:before {
-                  content: "";
-                  position: absolute;
-                  top: 9px;
-                  left: -5px;
-                  width: 7px;
-                  height: 30px;
-                  background-color: #add9c3;
-                  z-index: -1;
-                }
-              }
-
-              .ec-main {
-                display: block;
-                position: relative;
-
-                &:before {
-                  content: "";
-                  position: absolute;
-                  top: 9px;
-                  left: -5px;
-                  width: 7px;
-                  height: 30px;
-                  background-color: #c8d947;
-                  z-index: -1;
-                }
-              }
-            }
-
-            &__item-3 {
-              width: 100%;
-
-              .box {
-                width: 100%;
-                box-shadow: $shadow;
-                border-radius: 15px;
-
-                .item-box {
-                  padding: 10px 15px 15px 15px;
-                  margin-top: 30px;
-                  background-color: $white;
-                  border-radius: 15px;
-
-                  .title-h3 {
-                    margin: 0 10px;
-                  }
-
-                  //タブ
-                  .tab-panel {
-                    margin-top: 10px;
-                    overflow-x: scroll;
-                  }
-
-                  .tab-group {
-                    display: flex;
-                    justify-content: center;
-                    margin: 0 15px;
-                    min-width: 970px;
-                  }
-
-                  .tab {
-                    flex-grow: 1;
-                    padding: 5px;
-                    list-style: none;
-                    border-radius: 15px 15px 0 0;
-                    text-align: center;
-                    background-color: $smoke;
-                    color: $dark;
-                    cursor: pointer;
-                  }
-
-                  .panel-group {
-                    border-top: none;
-                    min-width: 1000px;
-                  }
-
-                  .panel {
-                    display: none;
-
-                    .campus {
-                      width: 100%;
-                      margin: 0 auto;
-                      padding: 15px 0;
-                      border-collapse: separate;
-                      border-spacing: 20px 10px;
-                      color: $dark !important;
-                      background-color: $white;
-                      border-radius: 15px;
-                      border: 1px solid #f7f7f8;
-                      box-shadow: $shadow;
-
-                      th {
-                        background-color: $smoke;
-                        border-radius: 100px;
-                        padding: 5px 15px;
-
-                        &:first-child {
-                          width: 40px;
+                        &:not(:first-child) {
+                            border-top: 2px solid $smoke;
+                            margin-top: 10px;
+                            padding-top: 10px;
                         }
+                    }
 
-                        &:nth-child(2) {
-                          width: 200px;
-                        }
-                      }
-
-                      td {
-                        text-align: center;
-                        background-color: $smoke;
-                        border-radius: 50px;
-                        padding: 5px 15px;
-                      }
-
-                      a {
-                        color: $dark;
+                    &__item {
+                        display: block;
+                        padding: 10px 0 10px 25px;
                         font-size: 1.4rem;
                         position: relative;
-                      }
+                        border-radius: 25px;
 
-                      a:before {
-                        position: absolute;
-                        content: "";
-                        display: block;
-                        background-image: url(../img/open_in_new-24px.svg);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        width: 80%;
-                        height: 80%;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        right: -100px;
-                      }
+                        &:not(:first-child) {
+                            margin-top: 10px;
+                        }
 
-                      a:hover {
-                        color: #43bacc;
-                        transition: all 0.2s ease-out;
+                        .gnav__item-link {
+                            color: $dark;
+                            transition: 0.4s ease-in-out;
+                        }
 
                         &:before {
-                          background-image: url(../img/open_in_new-24px_blue.svg);
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 0%;
+                            height: 100%;
+                            border-radius: 50px;
+                            background-color: $darkblue;
+                            transition: 0.4s ease-in-out;
+                            z-index: -1;
                         }
-                      }
+
+                        &:hover {
+                            .gnav__item-link {
+                                color: $white;
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:before {
+                                width: 100%;
+                            }
+
+                            color: $white;
+                        }
                     }
-                  }
 
-                  .tab.is-active {
-                    background: #dea832;
-                    color: #fff;
-                    transition: all 0.2s ease-out;
-                  }
+                    .internet {
+                        display: block;
+                        position: relative;
 
-                  .panel.is-show {
-                    display: block;
-                  }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: $data4;
+                            z-index: 0;
+                        }
+                    }
+
+                    .work {
+                        display: block;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: $data3;
+                            z-index: 0;
+                        }
+                    }
+
+                    .ec {
+                        display: block;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: $data2;
+                            z-index: 0;
+                        }
+                    }
+
+                    .cam {
+                        display: block;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 8px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 5px;
+                            background-color: $data1;
+                            z-index: 0;
+                        }
+                    }
+
+                    .active {
+                        background-color: $darkblue;
+
+                        .gnav__item-link {
+                            color: $white;
+                        }
+                    }
                 }
 
-                .active {
-                  background-color: $darkblue;
-                  color: $white;
-                }
-              }
-
-              .cam-main {
-                display: block;
-                position: relative;
-
-                &:before {
-                  content: "";
-                  position: absolute;
-                  top: 9px;
-                  left: -5px;
-                  width: 7px;
-                  height: 30px;
-                  background-color: #dea832;
-                  z-index: -1;
-                }
-              }
+                @include flex;
+                flex-wrap: nowrap;
             }
-          }
-
-          .info {
-            width: 50%;
-            margin: 0 auto;
-            padding: 40px 0 20px 0;
-
-            .info-title {
-              margin-top: 20px;
-              font-weight: bold;
-            }
-
-            .info-text {
-              font-weight: right;
-
-              a {
-                color: $dark;
-              }
-
-              a:hover {
-                color: #43bacc;
-                transition: all 0.2s ease-out;
-              }
-            }
-
-            .info-flex {
-              display: flex;
-              justify-content: left;
-              flex-wrap: wrap;
-
-              dl {
-                width: 20%;
-                text-align: center;
-                align-items: center;
-
-                dt {
-                  img {
-                    margin: 0 auto;
-                    width: 40%;
-                  }
-                }
-              }
-            }
-          }
         }
-      }
     }
-  }
 
-  //footer
-  #footer {
-    @include width;
-    background-color: $darkblue;
+    //main
+    #main {
+        @include width;
+        font-size: 1.6rem;
 
-    .footer-main {
-      .copyright {
-        padding: 8px;
-        font-size: 1rem;
-        text-align: center;
-        color: $white;
-      }
+        .main-inner {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            &__top {
+                margin-top: 100px;
+
+                .top {
+                    background-image: url(../img/stay_home.svg);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    background-size: 400px;
+                    padding-bottom: 30px;
+                    border-bottom: 2px solid $white;
+                    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
+
+                    .top-text {
+                        width: 60%;
+                        max-width: 800px;
+                        margin-top: 30px;
+                        padding: 0 0 20px 0;
+
+                        a {
+                            color: $dark;
+                            text-decoration: underline;
+
+                            &:hover {
+                                color: $data4;
+                                transition: all 0.2s ease-out;
+                            }
+                        }
+                    }
+                }
+
+                .graph {
+                    margin-top: 30px;
+                    padding-bottom: 50px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border-bottom: 2px solid $white;
+                    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
+
+                    .graph-intro {
+                        width: 100%;
+                        padding-top: 20px;
+                    }
+
+                    .graph-flexbox {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: top;
+                        margin-top: 20px;
+
+                        &__item {
+                            width: calc(100% / 2 - 1.5%);
+                            min-width: 300px;
+
+                            .box {
+                                width: 100%;
+                                box-shadow: $shadow;
+                                border-radius: 15px;
+
+                                .item-box {
+                                    padding: 10px;
+                                    margin-top: 30px;
+                                    background-color: $white;
+                                    border-radius: 15px;
+
+                                    .title-h3 {
+                                        margin: 0 10px;
+                                    }
+
+                                    .canvas-item {
+                                        width: 100%;
+                                        margin: 10px auto 0;
+                                        background-color: $smoke;
+                                        border-radius: 15px;
+                                    }
+                                }
+
+                                .active {
+                                    background-color: $darkblue;
+                                    color: $white;
+                                }
+                            }
+
+                            .internet-main {
+                                display: block;
+                                position: relative;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: $data4;
+                                    z-index: -1;
+                                }
+                            }
+                        }
+
+                        &__item-2 {
+                            width: calc(100% / 2 - 1.5%);
+                            min-width: 300px;
+
+                            .box {
+                                width: 100%;
+                                box-shadow: $shadow;
+                                border-radius: 15px;
+
+                                .item-box {
+                                    padding: 10px;
+                                    margin-top: 30px;
+                                    background-color: $white;
+                                    border-radius: 15px;
+
+                                    .title-h3 {
+                                        margin: 0 10px;
+                                    }
+
+                                    .canvas-item {
+                                        width: 100%;
+                                        margin: 10px auto 0;
+                                        background-color: $smoke;
+                                        border-radius: 15px;
+                                    }
+                                }
+
+                                .active {
+                                    background-color: $darkblue;
+                                    color: $white;
+                                }
+                            }
+
+                            .work-main {
+                                display: block;
+                                position: relative;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: $data3;
+                                    z-index: -1;
+                                }
+                            }
+
+                            .ec-main {
+                                display: block;
+                                position: relative;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: $data2;
+                                    z-index: -1;
+                                }
+                            }
+                        }
+
+                        &__item-3 {
+                            width: 100%;
+
+                            .box {
+                                width: 100%;
+                                box-shadow: $shadow;
+                                border-radius: 15px;
+
+                                .item-box {
+                                    padding: 10px 15px 15px 15px;
+                                    margin-top: 30px;
+                                    background-color: $white;
+                                    border-radius: 15px;
+
+                                    .title-h3 {
+                                        margin: 0 10px;
+                                    }
+
+                                    //タブ
+                                    .tab-panel {
+                                        margin-top: 10px;
+                                        overflow-x: scroll;
+                                    }
+
+                                    .tab-group {
+                                        display: flex;
+                                        justify-content: center;
+                                        margin: 0 15px;
+                                        min-width: 970px;
+                                    }
+
+                                    .tab {
+                                        flex-grow: 1;
+                                        padding: 5px;
+                                        list-style: none;
+                                        border-radius: 15px 15px 0 0;
+                                        text-align: center;
+                                        background-color: $smoke;
+                                        color: $dark;
+                                        cursor: pointer;
+                                    }
+
+                                    .panel-group {
+                                        border-top: none;
+                                        min-width: 1000px;
+                                    }
+
+                                    .panel {
+                                        display: none;
+
+                                        .campus {
+                                            width: 100%;
+                                            margin: 0 auto;
+                                            padding: 15px 0;
+                                            border-collapse: separate;
+                                            border-spacing: 20px 10px;
+                                            color: $dark !important;
+                                            background-color: $white;
+                                            border-radius: 15px;
+                                            border: 1px solid #f7f7f8;
+                                            box-shadow: $shadow;
+
+                                            th {
+                                                background-color: $smoke;
+                                                border-radius: 100px;
+                                                padding: 5px 15px;
+
+                                                &:first-child {
+                                                    width: 40px;
+                                                }
+
+                                                &:nth-child(2) {
+                                                    width: 200px;
+                                                }
+                                            }
+
+                                            td {
+                                                text-align: center;
+                                                background-color: $smoke;
+                                                border-radius: 50px;
+                                                padding: 5px 15px;
+                                            }
+
+                                            a {
+                                                color: $dark;
+                                                font-size: 1.4rem;
+                                                position: relative;
+                                            }
+
+                                            a:before {
+                                                position: absolute;
+                                                content: "";
+                                                display: block;
+                                                background-image: url(../img/open_in_new-24px.svg);
+                                                background-size: contain;
+                                                background-repeat: no-repeat;
+                                                width: 80%;
+                                                height: 80%;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                right: -100px;
+                                            }
+
+                                            a:hover {
+                                                color: $data4;
+                                                transition: all 0.2s ease-out;
+
+                                                &:before {
+                                                    background-image: url(../img/open_in_new-24px_blue.svg);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .tab.is-active {
+                                        background: $data1;
+                                        color: $white;
+                                        transition: all 0.2s ease-out;
+                                    }
+
+                                    .panel.is-show {
+                                        display: block;
+                                    }
+                                }
+
+                                .active {
+                                    background-color: $darkblue;
+                                    color: $white;
+                                }
+                            }
+
+                            .cam-main {
+                                display: block;
+                                position: relative;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 9px;
+                                    left: -5px;
+                                    width: 7px;
+                                    height: 30px;
+                                    background-color: $data1;
+                                    z-index: -1;
+                                }
+                            }
+                        }
+                    }
+
+                    .info {
+                        width: 50%;
+                        margin: 0 auto;
+                        padding: 40px 0 20px 0;
+
+                        .info-title {
+                            margin-top: 20px;
+                            font-weight: bold;
+                        }
+
+                        .info-text {
+                            font-weight: right;
+
+                            a {
+                                color: $dark;
+                            }
+
+                            a:hover {
+                                color: $data4;
+                                transition: all 0.2s ease-out;
+                            }
+                        }
+
+                        .info-flex {
+                            display: flex;
+                            justify-content: left;
+                            flex-wrap: wrap;
+
+                            dl {
+                                width: 20%;
+                                text-align: center;
+                                align-items: center;
+
+                                dt {
+                                    img {
+                                        margin: 0 auto;
+                                        width: 40%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
+
+    //footer
+    #footer {
+        @include width;
+        background-color: $darkblue;
+
+        .footer-main {
+            .copyright {
+                padding: 8px;
+                font-size: 1rem;
+                text-align: center;
+                color: $white;
+            }
+        }
+    }
 }
 
 //mediaクエリ widetab for(tablet)
@@ -564,561 +574,558 @@ html {
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 @include widetab {
-  html {
-    width: 100%;
-    background-color: $smoke;
-    color: $dark;
+    html {
+        width: 100%;
+        background-color: $smoke;
+        color: $dark;
 
-    // header sptab
-    #header {
-      display: block;
-      .head {
-        display: block;
-        overflow: scroll;
-        background-color: $white;
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0;
-        width: 300px;
-        height: 100vh;
-        border-radius: 0 10px 10px 0;
-        box-shadow: $shadow;
+        // header sptab
+        #header {
+            display: block;
 
-        .header-top {
-          width: 100%;
-          margin-top: 100px;
-          margin-bottom: 100px;
-          display: block;
-
-          .gnav {
-            width: 250px;
-            margin: 0 auto;
-
-            &__title {
-              font-size: 2rem;
-
-              &:not(:first-child) {
-                border-top: 2px solid $smoke;
-                margin-top: 10px;
-                padding-top: 10px;
-              }
-            }
-
-            &__item {
-              display: block;
-              padding: 10px 0 10px 25px;
-              font-size: 1.4rem;
-              position: relative;
-              border-radius: 25px;
-
-              &:not(:first-child) {
-                margin-top: 10px;
-              }
-
-              .gnav__item-link {
-                color: $dark;
-                transition: 0.4s ease-in-out;
-              }
-
-              &:before {
-                content: "";
-                position: absolute;
-                bottom: 0;
+            .head {
+                display: block;
+                overflow: scroll;
+                background-color: $white;
+                position: fixed;
+                z-index: 1000;
+                top: 0;
                 left: 0;
-                width: 0%;
-                height: 100%;
-                border-radius: 50px;
-                background-color: $darkblue;
-                transition: 0.4s ease-in-out;
-                z-index: -1;
-              }
+                width: 300px;
+                height: 100vh;
+                border-radius: 0 10px 10px 0;
+                box-shadow: $shadow;
 
-              &:hover {
-                .gnav__item-link {
-                  color: $white;
-                  transition: 0.3s ease-in-out;
-                }
+                .header-top {
+                    width: 100%;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    display: block;
 
-                &:before {
-                  width: 100%;
-                }
-
-                color: $white;
-              }
-            }
-
-            .internet {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #43bacc;
-                z-index: 0;
-              }
-            }
-
-            .work {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #add9c3;
-                z-index: 0;
-              }
-            }
-
-            .ec {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #c8d947;
-                z-index: 0;
-              }
-            }
-
-            .cam {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #dea832;
-                z-index: 0;
-              }
-            }
-
-            .active {
-              background-color: $darkblue;
-
-              .gnav__item-link {
-                color: $white;
-              }
-            }
-          }
-
-          @include flex;
-          flex-wrap: nowrap;
-        }
-      }
-    }
-
-    //main widetab
-    #main {
-      @include width-widetab;
-      font-size: 1.6rem;
-
-      .main-inner {
-        width: 90%;
-        max-width: 750px;
-        margin: 0 auto;
-
-        &__top {
-          margin-top: 100px;
-
-          .top {
-            background-image: url(../img/stay_home.svg);
-            background-repeat: no-repeat;
-            background-position: right bottom;
-            background-size: 300px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid $white;
-            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
-
-            .top-text {
-              width: 100%;
-              max-width: 800px;
-              margin-top: 30px;
-              padding: 20px;
-              background-color: rgba(255, 255, 255, 0.7);
-            }
-          }
-
-          .graph {
-            margin-top: 30px;
-            padding-bottom: 50px;
-            width: 100%;
-            box-sizing: border-box;
-            border-bottom: 2px solid $white;
-            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
-
-            .graph-intro {
-              width: 100%;
-              padding-top: 20px;
-            }
-
-            .graph-flexbox {
-              width: 100%;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              align-items: top;
-              margin-top: 20px;
-
-              &__item {
-                width: calc(100% - 1.5%);
-                min-width: 300px;
-
-                .box {
-                  width: 100%;
-                  box-shadow: $shadow;
-                  border-radius: 15px;
-
-                  .item-box {
-                    padding: 10px;
-                    margin-top: 30px; //レスポンシブ対応にしたい
-                    background-color: $white;
-                    border-radius: 15px;
-
-                    .title-h3 {
-                      margin: 0 10px;
-                    }
-
-                    .canvas-item {
-                      width: 100%;
-                      margin: 10px auto 0;
-                      background-color: $smoke;
-                      border-radius: 15px;
-                    }
-                  }
-
-                  .active {
-                    background-color: $darkblue;
-                    color: $white;
-                  }
-                }
-
-                .internet-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #43bacc;
-                    z-index: -1;
-                  }
-                }
-              }
-
-              &__item-2 {
-                width: calc(100% - 1.5%);
-                min-width: 300px;
-
-                .box {
-                  width: 100%;
-                  box-shadow: $shadow;
-                  border-radius: 15px;
-
-                  .item-box {
-                    padding: 10px;
-                    margin-top: 30px; //レスポンシブ対応にしたい
-                    background-color: $white;
-                    border-radius: 15px;
-
-                    .title-h3 {
-                      margin: 0 10px;
-                    }
-
-                    .canvas-item {
-                      width: 100%;
-                      margin: 10px auto 0;
-                      background-color: $smoke;
-                      border-radius: 15px;
-                    }
-                  }
-
-                  .active {
-                    background-color: $darkblue;
-                    color: $white;
-                  }
-                }
-
-                .work-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #add9c3;
-                    z-index: -1;
-                  }
-                }
-
-                .ec-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #c8d947;
-                    z-index: -1;
-                  }
-                }
-              }
-
-              &__item-3 {
-                // min-width: 300px;
-                width: 100%;
-
-                .box {
-                  width: 100%;
-                  box-shadow: $shadow;
-                  border-radius: 15px;
-
-                  .item-box {
-                    padding: 10px 15px 15px 15px;
-                    margin-top: 30px;
-                    background-color: $white;
-                    border-radius: 15px;
-
-                    .title-h3 {
-                      margin: 0 10px;
-                    }
-
-                    //タブ
-                    .tab-panel {
-                      margin-top: 10px;
-                      overflow-x: scroll;
-                    }
-
-                    .tab-group {
-                      display: flex;
-                      justify-content: center;
-                      margin: 0 15px;
-                      width: 970px;
-                    }
-
-                    .tab {
-                      flex-grow: 1;
-                      padding: 5px;
-                      list-style: none;
-                      border-radius: 15px 15px 0 0;
-                      text-align: center;
-                      background-color: $smoke;
-                      color: $dark;
-                      cursor: pointer;
-                    }
-
-                    .panel-group {
-                      // border-top:none;
-                      width: 1000px;
-                    }
-
-                    .panel {
-                      display: none;
-
-                      .campus {
-                        width: 100%;
+                    .gnav {
+                        width: 250px;
                         margin: 0 auto;
-                        padding: 15px 0;
-                        border-collapse: separate;
-                        border-spacing: 20px 10px;
-                        color: $dark !important;
-                        background-color: $white;
-                        border-radius: 15px;
-                        border: 1px solid #f7f7f8;
-                        box-shadow: $shadow;
 
-                        th {
-                          background-color: $smoke;
-                          border-radius: 100px;
-                          padding: 5px 15px;
+                        &__title {
+                            font-size: 2rem;
 
-                          &:first-child {
-                            width: 40px;
-                          }
-
-                          &:nth-child(2) {
-                            width: 200px;
-                          }
+                            &:not(:first-child) {
+                                border-top: 2px solid $smoke;
+                                margin-top: 10px;
+                                padding-top: 10px;
+                            }
                         }
 
-                        td {
-                          text-align: center;
-                          background-color: $smoke;
-                          border-radius: 50px;
-                          padding: 5px 15px;
-                          // &:first-child {
-                          //     width: 10px;
-                          // }
+                        &__item {
+                            display: block;
+                            padding: 10px 0 10px 25px;
+                            font-size: 1.4rem;
+                            position: relative;
+                            border-radius: 25px;
+
+                            &:not(:first-child) {
+                                margin-top: 10px;
+                            }
+
+                            .gnav__item-link {
+                                color: $dark;
+                                transition: 0.4s ease-in-out;
+                            }
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 0%;
+                                height: 100%;
+                                border-radius: 50px;
+                                background-color: $darkblue;
+                                transition: 0.4s ease-in-out;
+                                z-index: -1;
+                            }
+
+                            &:hover {
+                                .gnav__item-link {
+                                    color: $white;
+                                    transition: 0.3s ease-in-out;
+                                }
+
+                                &:before {
+                                    width: 100%;
+                                }
+
+                                color: $white;
+                            }
                         }
 
-                        a {
-                          color: $dark;
-                          font-size: 1.4rem;
+                        .internet {
+                            display: block;
+                            position: relative;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data4;
+                                z-index: 0;
+                            }
                         }
 
-                        a:before {
-                          position: absolute;
-                          content: "";
-                          display: block;
-                          background-image: url(../img/open_in_new-24px.svg);
-                          background-size: contain;
-                          background-repeat: no-repeat;
-                          width: 80%;
-                          height: 80%;
-                          top: 50%;
-                          transform: translateY(-50%);
-                          right: -100px;
+                        .work {
+                            display: block;
+                            position: relative;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data3;
+                                z-index: 0;
+                            }
                         }
 
-                        a:hover {
-                          color: #43bacc;
-                          transition: all 0.2s ease-out;
+                        .ec {
+                            display: block;
+                            position: relative;
 
-                          &:before {
-                            background-image: url(../img/open_in_new-24px_blue.svg);
-                          }
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data2;
+                                z-index: 0;
+                            }
                         }
-                      }
+
+                        .cam {
+                            display: block;
+                            position: relative;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data1;
+                                z-index: 0;
+                            }
+                        }
+
+                        .active {
+                            background-color: $darkblue;
+
+                            .gnav__item-link {
+                                color: $white;
+                            }
+                        }
                     }
 
-                    .tab.is-active {
-                      background: #dea832;
-                      color: #fff;
-                      transition: all 0.2s ease-out;
+                    @include flex;
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+
+        //main widetab
+        #main {
+            @include width-widetab;
+            font-size: 1.6rem;
+
+            .main-inner {
+                width: 90%;
+                max-width: 750px;
+                margin: 0 auto;
+
+                &__top {
+                    margin-top: 100px;
+
+                    .top {
+                        background-image: url(../img/stay_home.svg);
+                        background-repeat: no-repeat;
+                        background-position: right bottom;
+                        background-size: 300px;
+                        padding-bottom: 30px;
+                        border-bottom: 2px solid $white;
+                        box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
+
+                        .top-text {
+                            width: 100%;
+                            max-width: 800px;
+                            margin-top: 30px;
+                            padding: 20px;
+                            background-color: rgba(255, 255, 255, 0.7);
+                        }
                     }
 
-                    .panel.is-show {
-                      display: block;
-                    }
-                  }
+                    .graph {
+                        margin-top: 30px;
+                        padding-bottom: 50px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        border-bottom: 2px solid $white;
+                        box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
 
-                  .active {
-                    background-color: $darkblue;
+                        .graph-intro {
+                            width: 100%;
+                            padding-top: 20px;
+                        }
+
+                        .graph-flexbox {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: top;
+                            margin-top: 20px;
+
+                            &__item {
+                                width: calc(100% - 1.5%);
+                                min-width: 300px;
+
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+
+                                    .item-box {
+                                        padding: 10px;
+                                        margin-top: 30px; //レスポンシブ対応にしたい
+                                        background-color: $white;
+                                        border-radius: 15px;
+
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+
+                                        .canvas-item {
+                                            width: 100%;
+                                            margin: 10px auto 0;
+                                            background-color: $smoke;
+                                            border-radius: 15px;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+
+                                .internet-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data4;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+
+                            &__item-2 {
+                                width: calc(100% - 1.5%);
+                                min-width: 300px;
+
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+
+                                    .item-box {
+                                        padding: 10px;
+                                        margin-top: 30px; //レスポンシブ対応にしたい
+                                        background-color: $white;
+                                        border-radius: 15px;
+
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+
+                                        .canvas-item {
+                                            width: 100%;
+                                            margin: 10px auto 0;
+                                            background-color: $smoke;
+                                            border-radius: 15px;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+
+                                .work-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data3;
+                                        z-index: -1;
+                                    }
+                                }
+
+                                .ec-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data2;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+
+                            &__item-3 {
+                                width: 100%;
+
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+
+                                    .item-box {
+                                        padding: 10px 15px 15px 15px;
+                                        margin-top: 30px;
+                                        background-color: $white;
+                                        border-radius: 15px;
+
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+
+                                        //タブ
+                                        .tab-panel {
+                                            margin-top: 10px;
+                                            overflow-x: scroll;
+                                        }
+
+                                        .tab-group {
+                                            display: flex;
+                                            justify-content: center;
+                                            margin: 0 15px;
+                                            width: 970px;
+                                        }
+
+                                        .tab {
+                                            flex-grow: 1;
+                                            padding: 5px;
+                                            list-style: none;
+                                            border-radius: 15px 15px 0 0;
+                                            text-align: center;
+                                            background-color: $smoke;
+                                            color: $dark;
+                                            cursor: pointer;
+                                        }
+
+                                        .panel-group {
+                                            // border-top:none;
+                                            width: 1000px;
+                                        }
+
+                                        .panel {
+                                            display: none;
+
+                                            .campus {
+                                                width: 100%;
+                                                margin: 0 auto;
+                                                padding: 15px 0;
+                                                border-collapse: separate;
+                                                border-spacing: 20px 10px;
+                                                color: $dark !important;
+                                                background-color: $white;
+                                                border-radius: 15px;
+                                                border: 1px solid #f7f7f8;
+                                                box-shadow: $shadow;
+
+                                                th {
+                                                    background-color: $smoke;
+                                                    border-radius: 100px;
+                                                    padding: 5px 15px;
+
+                                                    &:first-child {
+                                                        width: 40px;
+                                                    }
+
+                                                    &:nth-child(2) {
+                                                        width: 200px;
+                                                    }
+                                                }
+
+                                                td {
+                                                    text-align: center;
+                                                    background-color: $smoke;
+                                                    border-radius: 50px;
+                                                    padding: 5px 15px;
+                                                }
+
+                                                a {
+                                                    color: $dark;
+                                                    font-size: 1.4rem;
+                                                }
+
+                                                a:before {
+                                                    position: absolute;
+                                                    content: "";
+                                                    display: block;
+                                                    background-image: url(../img/open_in_new-24px.svg);
+                                                    background-size: contain;
+                                                    background-repeat: no-repeat;
+                                                    width: 80%;
+                                                    height: 80%;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    right: -100px;
+                                                }
+
+                                                a:hover {
+                                                    color: $data4;
+                                                    transition: all 0.2s ease-out;
+
+                                                    &:before {
+                                                        background-image: url(../img/open_in_new-24px_blue.svg);
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .tab.is-active {
+                                            background: $data1;
+                                            color: $white;
+                                            transition: all 0.2s ease-out;
+                                        }
+
+                                        .panel.is-show {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+
+                                .cam-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data1;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                        }
+
+                        .info {
+                            width: 80%;
+                            margin: 0 auto;
+                            padding: 40px 0 20px 0;
+
+                            .info-title {
+                                margin-top: 20px;
+                                font-weight: bold;
+                            }
+
+                            .info-text {
+                                font-weight: right;
+
+                                a {
+                                    color: $dark;
+                                }
+
+                                a:hover {
+                                    color: $data4;
+                                    transition: 0.2s ease-in-out;
+                                }
+                            }
+
+                            .info-flex {
+                                display: flex;
+                                justify-content: left;
+                                flex-wrap: wrap;
+
+                                dl {
+                                    width: 20%;
+                                    min-width: 50px;
+                                    text-align: center;
+                                    align-items: center;
+
+                                    dt {
+                                        img {
+                                            margin: 0 auto;
+                                            width: 40%;
+                                            min-width: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //footer widetab
+        #footer {
+            @include width-widetab;
+            background-color: $darkblue;
+
+            .footer-main {
+                .copyright {
+                    padding: 8px;
+                    font-size: 1rem;
+                    text-align: center;
                     color: $white;
-                  }
                 }
-
-                .cam-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #dea832;
-                    z-index: -1;
-                  }
-                }
-              }
             }
-
-            .info {
-              width: 80%;
-              margin: 0 auto;
-              padding: 40px 0 20px 0;
-
-              .info-title {
-                margin-top: 20px;
-                font-weight: bold;
-              }
-
-              .info-text {
-                font-weight: right;
-
-                a {
-                  color: $dark;
-                }
-
-                a:hover {
-                  color: #43bacc;
-                  transition: 0.2s ease-in-out;
-                }
-              }
-
-              .info-flex {
-                display: flex;
-                justify-content: left;
-                flex-wrap: wrap;
-
-                dl {
-                  width: 20%;
-                  min-width: 50px;
-                  text-align: center;
-                  align-items: center;
-
-                  dt {
-                    img {
-                      margin: 0 auto;
-                      width: 40%;
-                      min-width: 40px;
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
-      }
     }
-
-    //footer widetab
-    #footer {
-      @include width-widetab;
-      background-color: $darkblue;
-
-      .footer-main {
-        .copyright {
-          padding: 8px;
-          font-size: 1rem;
-          text-align: center;
-          color: $white;
-        }
-      }
-    }
-  }
 }
 
 //mediaクエリ sp for(iphone)
@@ -1128,622 +1135,620 @@ html {
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 @include sp {
-  html {
-    width: 100%;
-    background-color: $smoke;
-    color: $dark;
-
-    h1 {
-      font-size: 2.8rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-
-    // header sp
-    #header {
-      .hamburger {
-        display: block;
-        position: fixed;
-        z-index: 3;
-        left: 13px;
-        top: 12px;
-        width: 42px;
-        height: 42px;
-        cursor: pointer;
-        text-align: center;
-      }
-      .hamburger span {
-        background: $dark;
-        box-shadow: $shadow;
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 2.5px;
-        border-radius: 5px;
-        left: 6px;
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
-      }
-      .hamburger span:nth-child(1) {
-        top: 10px;
-      }
-      .hamburger span:nth-child(2) {
-        top: 20px;
-      }
-      .hamburger span:nth-child(3) {
-        top: 30px;
-      }
-
-      .hamburger.active span:nth-child(1) {
-        top: 16px;
-        left: 6px;
-        -webkit-transform: rotate(315deg);
-        -moz-transform: rotate(315deg);
-        transform: rotate(315deg);
-      }
-
-      .hamburger.active span:nth-child(2),
-      .hamburger.active span:nth-child(3) {
-        top: 16px;
-        -webkit-transform: rotate(-315deg);
-        -moz-transform: rotate(-315deg);
-        transform: rotate(-315deg);
-      }
-
-      nav.head {
-        background: $off-white;
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        transition: all 0.6s;
+    html {
         width: 100%;
-      }
+        background-color: $smoke;
+        color: $dark;
 
-      /* このクラスを、jQueryで付与・削除する */
-      nav.head.active {
-        transform: translateX(0%);
-        z-index: 2;
-      }
+        h1 {
+            font-size: 2.8rem;
+        }
 
-      .head {
-        // border-radius: 0 10px 10px 0;
-        // box-shadow: $shadow;
+        h2 {
+            font-size: 2rem;
+        }
 
-        .header-top {
-          width: 100%;
-          margin-top: 100px;
-          margin-bottom: 100px;
-          display: block;
-
-          .gnav {
-            width: 250px;
-            margin: 0 auto;
-
-            &__title {
-              font-size: 2rem;
-
-              &:not(:first-child) {
-                border-top: 2px solid $smoke;
-                margin-top: 10px;
-                padding-top: 10px;
-              }
+        // header sp
+        #header {
+            .hamburger {
+                display: block;
+                position: fixed;
+                z-index: 3;
+                left: 13px;
+                top: 12px;
+                width: 42px;
+                height: 42px;
+                cursor: pointer;
+                text-align: center;
             }
 
-            &__item {
-              display: block;
-              padding: 10px 0 10px 25px;
-              font-size: 1.4rem;
-              position: relative;
-              border-radius: 25px;
-
-              &:not(:first-child) {
-                margin-top: 10px;
-              }
-
-              .gnav__item-link {
-                color: $dark;
-                transition: 0.4s ease-in-out;
-              }
-
-              &:before {
-                content: "";
+            .hamburger span {
+                background: $dark;
+                box-shadow: $shadow;
+                display: block;
                 position: absolute;
-                bottom: 0;
+                width: 30px;
+                height: 2.5px;
+                border-radius: 5px;
+                left: 6px;
+                -webkit-transition: 0.5s ease-in-out;
+                -moz-transition: 0.5s ease-in-out;
+                transition: 0.5s ease-in-out;
+            }
+
+            .hamburger span:nth-child(1) {
+                top: 10px;
+            }
+
+            .hamburger span:nth-child(2) {
+                top: 20px;
+            }
+
+            .hamburger span:nth-child(3) {
+                top: 30px;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                top: 16px;
+                left: 6px;
+                -webkit-transform: rotate(315deg);
+                -moz-transform: rotate(315deg);
+                transform: rotate(315deg);
+            }
+
+            .hamburger.active span:nth-child(2),
+            .hamburger.active span:nth-child(3) {
+                top: 16px;
+                -webkit-transform: rotate(-315deg);
+                -moz-transform: rotate(-315deg);
+                transform: rotate(-315deg);
+            }
+
+            nav.head {
+                background: $off-white;
+                position: fixed;
+                z-index: 2;
+                top: 0;
                 left: 0;
-                width: 0%;
-                height: 100%;
-                border-radius: 50px;
-                background-color: $darkblue;
-                transition: 0.4s ease-in-out;
-                z-index: -1;
-              }
-
-              &:hover {
-                .gnav__item-link {
-                  color: $white;
-                  transition: 0.3s ease-in-out;
-                }
-
-                &:before {
-                  width: 100%;
-                }
-
-                color: $white;
-              }
-            }
-
-            .internet {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #43bacc;
-                z-index: 0;
-              }
-            }
-
-            .work {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #add9c3;
-                z-index: 0;
-              }
-            }
-
-            .ec {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #c8d947;
-                z-index: 0;
-              }
-            }
-
-            .cam {
-              display: block;
-              position: relative;
-
-              &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 8px;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                background-color: #dea832;
-                z-index: 0;
-              }
-            }
-
-            .active {
-              background-color: $darkblue;
-
-              .gnav__item-link {
-                color: $white;
-              }
-            }
-          }
-
-          @include flex;
-          flex-wrap: nowrap;
-        }
-      }
-    }
-
-    //main sp
-    #main {
-      @include width-sp;
-      font-size: 1.6rem;
-
-      .main-inner {
-        width: 90%;
-        margin: 0 auto;
-
-        &__top {
-          margin-top: 70px;
-
-          .top {
-            background-image: url(../img/stay_home.svg);
-            background-repeat: no-repeat;
-            background-position: right bottom;
-            background-size: 300px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid $white;
-            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
-
-            .top-text {
-              width: 94%;
-              margin: 0 auto;
-              margin-top: 30px;
-              padding: 10px;
-              background-color: rgba(255, 255, 255, 0.7);
-            }
-          }
-
-          .graph {
-            margin-top: 30px;
-            padding-bottom: 50px;
-            width: 100%;
-            box-sizing: border-box;
-            border-bottom: 2px solid $white;
-            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
-
-            .graph-intro {
-              width: 100%;
-              padding-top: 20px;
-            }
-
-            .graph-flexbox {
-              width: 100%;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              align-items: top;
-              margin-top: 20px;
-
-              &__item {
-                width: calc(100% - 1.5%);
-                // min-width: 300px;
-
-                .box {
-                  width: 100%;
-                  box-shadow: $shadow;
-                  border-radius: 15px;
-
-                  .item-box {
-                    padding: 10px;
-                    margin-top: 30px;
-                    background-color: $white;
-                    border-radius: 15px;
-
-                    .title-h3 {
-                      margin: 0 10px;
-                    }
-
-                    .canvas-item {
-                      width: 100%;
-                      margin: 10px auto 0;
-                      background-color: $smoke;
-                      border-radius: 15px;
-                    }
-                  }
-
-                  .active {
-                    background-color: $darkblue;
-                    color: $white;
-                  }
-                }
-
-                .internet-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #43bacc;
-                    z-index: -1;
-                  }
-                }
-              }
-
-              &__item-2 {
-                width: calc(100% - 1.5%);
-                // min-width: 300px;
-
-                .box {
-                  width: 100%;
-                  box-shadow: $shadow;
-                  border-radius: 15px;
-
-                  .item-box {
-                    padding: 10px;
-                    margin-top: 30px;
-                    background-color: $white;
-                    border-radius: 15px;
-
-                    .title-h3 {
-                      margin: 0 10px;
-                    }
-
-                    .canvas-item {
-                      width: 100%;
-                      margin: 10px auto 0;
-                      background-color: $smoke;
-                      border-radius: 15px;
-                    }
-                  }
-
-                  .active {
-                    background-color: $darkblue;
-                    color: $white;
-                  }
-                }
-
-                .work-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #add9c3;
-                    z-index: -1;
-                  }
-                }
-
-                .ec-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #c8d947;
-                    z-index: -1;
-                  }
-                }
-              }
-
-              &__item-3 {
+                transform: translateX(-100%);
+                transition: all 0.6s;
                 width: 100%;
+            }
 
-                .box {
-                  width: 100%;
-                  box-shadow: $shadow;
-                  border-radius: 15px;
+            /* このクラスを、jQueryで付与・削除する */
+            nav.head.active {
+                transform: translateX(0%);
+                z-index: 2;
+            }
 
-                  .item-box {
-                    padding: 10px 15px 15px 15px;
-                    margin-top: 30px;
-                    background-color: $white;
-                    border-radius: 15px;
+            .head {
+                // border-radius: 0 10px 10px 0;
+                // box-shadow: $shadow;
 
-                    .title-h3 {
-                      margin: 0 10px;
-                    }
+                .header-top {
+                    width: 100%;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    display: block;
 
-                    //タブ
-                    .tab-panel {
-                      margin-top: 10px;
-                      overflow-x: scroll;
-                    }
-
-                    .tab-group {
-                      display: flex;
-                      justify-content: center;
-                      margin: 0 15px;
-                      width: 970px;
-                    }
-
-                    .tab {
-                      flex-grow: 1;
-                      padding: 5px;
-                      list-style: none;
-                      border-radius: 15px 15px 0 0;
-                      text-align: center;
-                      background-color: $smoke;
-                      color: $dark;
-                      cursor: pointer;
-                    }
-
-                    .panel-group {
-                      // border-top:none;
-                      width: 1000px;
-                    }
-
-                    .panel {
-                      display: none;
-
-                      .campus {
-                        width: 100%;
+                    .gnav {
+                        width: 250px;
                         margin: 0 auto;
-                        padding: 15px 0;
-                        border-collapse: separate;
-                        border-spacing: 20px 10px;
-                        color: $dark !important;
-                        background-color: $white;
-                        border-radius: 15px;
-                        border: 1px solid #f7f7f8;
-                        box-shadow: $shadow;
 
-                        th {
-                          background-color: $smoke;
-                          border-radius: 100px;
-                          padding: 5px 15px;
+                        &__title {
+                            font-size: 2rem;
 
-                          &:first-child {
-                            width: 40px;
-                          }
-
-                          &:nth-child(2) {
-                            width: 200px;
-                          }
+                            &:not(:first-child) {
+                                border-top: 2px solid $smoke;
+                                margin-top: 10px;
+                                padding-top: 10px;
+                            }
                         }
 
-                        td {
-                          text-align: center;
-                          background-color: $smoke;
-                          border-radius: 50px;
-                          padding: 5px 15px;
-                          // &:first-child {
-                          //     width: 10px;
-                          // }
+                        &__item {
+                            display: block;
+                            padding: 10px 0 10px 25px;
+                            font-size: 1.4rem;
+                            position: relative;
+                            border-radius: 25px;
+
+                            &:not(:first-child) {
+                                margin-top: 10px;
+                            }
+
+                            .gnav__item-link {
+                                color: $dark;
+                                transition: 0.4s ease-in-out;
+                            }
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 0%;
+                                height: 100%;
+                                border-radius: 50px;
+                                background-color: $darkblue;
+                                transition: 0.4s ease-in-out;
+                                z-index: -1;
+                            }
+
+                            &:hover {
+                                .gnav__item-link {
+                                    color: $white;
+                                    transition: 0.3s ease-in-out;
+                                }
+
+                                &:before {
+                                    width: 100%;
+                                }
+
+                                color: $white;
+                            }
                         }
 
-                        a {
-                          color: $dark;
-                          font-size: 1.4rem;
+                        .internet {
+                            display: block;
+                            position: relative;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data4;
+                                z-index: 0;
+                            }
                         }
 
-                        a:before {
-                          position: absolute;
-                          content: "";
-                          display: block;
-                          background-image: url(../img/open_in_new-24px.svg);
-                          background-size: contain;
-                          background-repeat: no-repeat;
-                          width: 80%;
-                          height: 80%;
-                          top: 50%;
-                          transform: translateY(-50%);
-                          right: -100px;
+                        .work {
+                            display: block;
+                            position: relative;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data3;
+                                z-index: 0;
+                            }
                         }
 
-                        a:hover {
-                          color: #43bacc;
-                          transition: all 0.2s ease-out;
+                        .ec {
+                            display: block;
+                            position: relative;
 
-                          &:before {
-                            background-image: url(../img/open_in_new-24px_blue.svg);
-                          }
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data2;
+                                z-index: 0;
+                            }
                         }
-                      }
+
+                        .cam {
+                            display: block;
+                            position: relative;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 8px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 5px;
+                                background-color: $data1;
+                                z-index: 0;
+                            }
+                        }
+
+                        .active {
+                            background-color: $darkblue;
+
+                            .gnav__item-link {
+                                color: $white;
+                            }
+                        }
                     }
 
-                    .tab.is-active {
-                      background: #dea832;
-                      color: #fff;
-                      transition: all 0.2s ease-out;
+                    @include flex;
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+
+        //main sp
+        #main {
+            @include width-sp;
+            font-size: 1.6rem;
+
+            .main-inner {
+                width: 90%;
+                margin: 0 auto;
+
+                &__top {
+                    margin-top: 70px;
+
+                    .top {
+                        background-image: url(../img/stay_home.svg);
+                        background-repeat: no-repeat;
+                        background-position: right bottom;
+                        background-size: 300px;
+                        padding-bottom: 30px;
+                        border-bottom: 2px solid $white;
+                        box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
+
+                        .top-text {
+                            width: 94%;
+                            margin: 0 auto;
+                            margin-top: 30px;
+                            padding: 10px;
+                            background-color: rgba(255, 255, 255, 0.7);
+                        }
                     }
 
-                    .panel.is-show {
-                      display: block;
-                    }
-                  }
+                    .graph {
+                        margin-top: 30px;
+                        padding-bottom: 50px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        border-bottom: 2px solid $white;
+                        box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.3);
 
-                  .active {
-                    background-color: $darkblue;
+                        .graph-intro {
+                            width: 100%;
+                            padding-top: 20px;
+                        }
+
+                        .graph-flexbox {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: top;
+                            margin-top: 20px;
+
+                            &__item {
+                                width: calc(100% - 1.5%);
+
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+
+                                    .item-box {
+                                        padding: 10px;
+                                        margin-top: 30px;
+                                        background-color: $white;
+                                        border-radius: 15px;
+
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+
+                                        .canvas-item {
+                                            width: 100%;
+                                            margin: 10px auto 0;
+                                            background-color: $smoke;
+                                            border-radius: 15px;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+
+                                .internet-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data4;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+
+                            &__item-2 {
+                                width: calc(100% - 1.5%);
+
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+
+                                    .item-box {
+                                        padding: 10px;
+                                        margin-top: 30px;
+                                        background-color: $white;
+                                        border-radius: 15px;
+
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+
+                                        .canvas-item {
+                                            width: 100%;
+                                            margin: 10px auto 0;
+                                            background-color: $smoke;
+                                            border-radius: 15px;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+
+                                .work-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data3;
+                                        z-index: -1;
+                                    }
+                                }
+
+                                .ec-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data2;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+
+                            &__item-3 {
+                                width: 100%;
+
+                                .box {
+                                    width: 100%;
+                                    box-shadow: $shadow;
+                                    border-radius: 15px;
+
+                                    .item-box {
+                                        padding: 10px 15px 15px 15px;
+                                        margin-top: 30px;
+                                        background-color: $white;
+                                        border-radius: 15px;
+
+                                        .title-h3 {
+                                            margin: 0 10px;
+                                        }
+
+                                        //タブ
+                                        .tab-panel {
+                                            margin-top: 10px;
+                                            overflow-x: scroll;
+                                        }
+
+                                        .tab-group {
+                                            display: flex;
+                                            justify-content: center;
+                                            margin: 0 15px;
+                                            width: 970px;
+                                        }
+
+                                        .tab {
+                                            flex-grow: 1;
+                                            padding: 5px;
+                                            list-style: none;
+                                            border-radius: 15px 15px 0 0;
+                                            text-align: center;
+                                            background-color: $smoke;
+                                            color: $dark;
+                                            cursor: pointer;
+                                        }
+
+                                        .panel-group {
+                                            width: 1000px;
+                                        }
+
+                                        .panel {
+                                            display: none;
+
+                                            .campus {
+                                                width: 100%;
+                                                margin: 0 auto;
+                                                padding: 15px 0;
+                                                border-collapse: separate;
+                                                border-spacing: 20px 10px;
+                                                color: $dark !important;
+                                                background-color: $white;
+                                                border-radius: 15px;
+                                                border: 1px solid #f7f7f8;
+                                                box-shadow: $shadow;
+
+                                                th {
+                                                    background-color: $smoke;
+                                                    border-radius: 100px;
+                                                    padding: 5px 15px;
+
+                                                    &:first-child {
+                                                        width: 40px;
+                                                    }
+
+                                                    &:nth-child(2) {
+                                                        width: 200px;
+                                                    }
+                                                }
+
+                                                td {
+                                                    text-align: center;
+                                                    background-color: $smoke;
+                                                    border-radius: 50px;
+                                                    padding: 5px 15px;
+                                                }
+
+                                                a {
+                                                    color: $dark;
+                                                    font-size: 1.4rem;
+                                                }
+
+                                                a:before {
+                                                    position: absolute;
+                                                    content: "";
+                                                    display: block;
+                                                    background-image: url(../img/open_in_new-24px.svg);
+                                                    background-size: contain;
+                                                    background-repeat: no-repeat;
+                                                    width: 80%;
+                                                    height: 80%;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    right: -100px;
+                                                }
+
+                                                a:hover {
+                                                    color: $data4;
+                                                    transition: all 0.2s ease-out;
+
+                                                    &:before {
+                                                        background-image: url(../img/open_in_new-24px_blue.svg);
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .tab.is-active {
+                                            background: $data1;
+                                            color: $white;
+                                            transition: all 0.2s ease-out;
+                                        }
+
+                                        .panel.is-show {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: $darkblue;
+                                        color: $white;
+                                    }
+                                }
+
+                                .cam-main {
+                                    display: block;
+                                    position: relative;
+
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 9px;
+                                        left: -5px;
+                                        width: 7px;
+                                        height: 30px;
+                                        background-color: $data1;
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                        }
+
+                        .info {
+                            width: 80%;
+                            margin: 0 auto;
+                            padding: 40px 0 20px 0;
+
+                            .info-title {
+                                margin-top: 20px;
+                                font-weight: bold;
+                            }
+
+                            .info-text {
+                                font-weight: right;
+
+                                a {
+                                    color: $dark;
+                                }
+
+                                a:hover {
+                                    color: $data4;
+                                    transition: 0.2s ease-in-out;
+                                }
+                            }
+
+                            .info-flex {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+
+                                dl {
+                                    width: 34%;
+                                    min-width: 50px;
+                                    text-align: center;
+                                    align-items: center;
+
+                                    dt {
+                                        img {
+                                            margin: 0 auto;
+                                            width: 40%;
+                                            min-width: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //footer sp
+        #footer {
+            @include width-sp;
+            background-color: $darkblue;
+
+            .footer-main {
+                .copyright {
+                    padding: 8px;
+                    font-size: 1rem;
+                    text-align: center;
                     color: $white;
-                  }
                 }
-
-                .cam-main {
-                  display: block;
-                  position: relative;
-
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    top: 9px;
-                    left: -5px;
-                    width: 7px;
-                    height: 30px;
-                    background-color: #dea832;
-                    z-index: -1;
-                  }
-                }
-              }
             }
-
-            .info {
-              width: 80%;
-              margin: 0 auto;
-              padding: 40px 0 20px 0;
-
-              .info-title {
-                margin-top: 20px;
-                font-weight: bold;
-              }
-
-              .info-text {
-                font-weight: right;
-
-                a {
-                  color: $dark;
-                }
-
-                a:hover {
-                  color: #43bacc;
-                  transition: 0.2s ease-in-out;
-                }
-              }
-
-              .info-flex {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-
-                dl {
-                  width: 34%;
-                  min-width: 50px;
-                  text-align: center;
-                  align-items: center;
-
-                  dt {
-                    img {
-                      margin: 0 auto;
-                      width: 40%;
-                      min-width: 40px;
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
-      }
     }
-
-    //footer sp
-    #footer {
-      @include width-sp;
-      background-color: $darkblue;
-
-      .footer-main {
-        .copyright {
-          padding: 8px;
-          font-size: 1rem;
-          text-align: center;
-          color: $white;
-        }
-      }
-    }
-  }
 }
