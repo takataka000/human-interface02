@@ -353,6 +353,7 @@ html {
                         padding: 5px 15px; }
                       html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus a {
                         color: #000;
+                        text-decoration: underline;
                         font-size: 1.4rem;
                         position: relative; }
                       html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus a:before {
@@ -371,6 +372,7 @@ html {
                         right: -100px; }
                       html #main .main-inner__top .graph .graph-flexbox__item-3 .box .item-box .panel .campus a:hover {
                         color: #43bacc;
+                        text-decoration: underline;
                         -webkit-transition: all 0.2s ease-out;
                         -o-transition: all 0.2s ease-out;
                         transition: all 0.2s ease-out; }
@@ -409,7 +411,8 @@ html {
             html #main .main-inner__top .graph .info .info-text {
               font-weight: right; }
               html #main .main-inner__top .graph .info .info-text a {
-                color: #000; }
+                color: #000;
+                text-decoration: underline; }
               html #main .main-inner__top .graph .info .info-text a:hover {
                 color: #43bacc;
                 -webkit-transition: all 0.2s ease-out;

@@ -440,6 +440,7 @@ html {
 
                                             a {
                                                 color: $dark;
+                                                text-decoration: underline;
                                                 font-size: 1.4rem;
                                                 position: relative;
                                             }
@@ -460,6 +461,7 @@ html {
 
                                             a:hover {
                                                 color: $data4;
+                                                text-decoration: underline;
                                                 transition: all 0.2s ease-out;
 
                                                 &:before {
@@ -519,6 +521,7 @@ html {
 
                             a {
                                 color: $dark;
+                                text-decoration: underline;
                             }
 
                             a:hover {
