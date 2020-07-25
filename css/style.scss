@@ -1204,7 +1204,24 @@ html {
                 transform: rotate(-315deg);
             }
 
-            nav.head {
+            // nav.head {
+            //     background: $off-white;
+            //     position: fixed;
+            //     z-index: 2;
+            //     top: 0;
+            //     left: 0;
+            //     transform: translateX(-100%);
+            //     transition: all 0.6s;
+            //     width: 100%;
+            // }
+
+            // /* このクラスを、jQueryで付与・削除する */
+            // nav.head.active {
+            //     transform: translateX(0%);
+            //     z-index: 2;
+            // }
+//追加
+            nav#head {
                 background: $off-white;
                 position: fixed;
                 z-index: 2;
@@ -1216,14 +1233,12 @@ html {
             }
 
             /* このクラスを、jQueryで付与・削除する */
-            nav.head.active {
+            nav#head.active {
                 transform: translateX(0%);
                 z-index: 2;
             }
 
             .head {
-                // border-radius: 0 10px 10px 0;
-                // box-shadow: $shadow;
 
                 .header-top {
                     width: 100%;

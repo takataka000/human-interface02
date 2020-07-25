@@ -937,7 +937,7 @@ html {
         -moz-transform: rotate(-315deg);
         -ms-transform: rotate(-315deg);
         transform: rotate(-315deg); }
-      html #header nav.head {
+      html #header nav#head {
         background: rgba(255, 255, 255, 0.95);
         position: fixed;
         z-index: 2;
@@ -950,7 +950,7 @@ html {
         -o-transition: all 0.6s;
         transition: all 0.6s;
         width: 100%; }
-      html #header nav.head.active {
+      html #header nav#head.active {
         -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
         transform: translateX(0%);
