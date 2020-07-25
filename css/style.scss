@@ -1169,6 +1169,7 @@ html {
                 position: absolute;
                 width: 30px;
                 height: 2.5px;
+                border: solid 0.25px $smoke;
                 border-radius: 5px;
                 left: 6px;
                 -webkit-transition: 0.5s ease-in-out;
@@ -1203,24 +1204,6 @@ html {
                 -moz-transform: rotate(-315deg);
                 transform: rotate(-315deg);
             }
-
-            // nav.head {
-            //     background: $off-white;
-            //     position: fixed;
-            //     z-index: 2;
-            //     top: 0;
-            //     left: 0;
-            //     transform: translateX(-100%);
-            //     transition: all 0.6s;
-            //     width: 100%;
-            // }
-
-            // /* このクラスを、jQueryで付与・削除する */
-            // nav.head.active {
-            //     transform: translateX(0%);
-            //     z-index: 2;
-            // }
-//追加
             nav#head {
                 background: $off-white;
                 position: fixed;

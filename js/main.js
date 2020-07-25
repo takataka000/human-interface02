@@ -18,6 +18,13 @@ var myChart0 = new Chart(ctx, {
           "#4051B3",
           "#111766",
         ],
+        borderColor: [
+          "#ADD9C3",
+          "#43BACC",
+          "#0086BF",
+          "#4051B3",
+          "#111766",
+        ],
         borderWidth: 2,
       },
     ],
@@ -60,7 +67,7 @@ var myChart0 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -75,7 +82,7 @@ var myChart0 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 12,
           },
           gridLines: {
             display: false,
@@ -126,6 +133,9 @@ var myChart1 = new Chart(ctx, {
           "#ADD9C3",
           "#ADD9C3",
         ],
+        borderColor: [
+          "#ADD9C3"
+        ],
         borderWidth: 2,
       },
       {
@@ -142,6 +152,9 @@ var myChart1 = new Chart(ctx, {
           "#43BACC",
           "#43BACC",
           "#43BACC",
+        ],
+        borderColor: [
+          "#43BACC"
         ],
         borderWidth: 2,
       },
@@ -160,6 +173,9 @@ var myChart1 = new Chart(ctx, {
           "#0086BF",
           "#0086BF",
         ],
+        borderColor: [
+          "#0086BF"
+        ],
         borderWidth: 2,
       },
       {
@@ -177,6 +193,9 @@ var myChart1 = new Chart(ctx, {
           "#4051B3",
           "#4051B3",
         ],
+        borderColor: [
+          "#4051B3"
+        ],
         borderWidth: 2,
       },
       {
@@ -193,6 +212,9 @@ var myChart1 = new Chart(ctx, {
           "#111766",
           "#111766",
           "#111766",
+        ],
+        borderColor: [
+          "#111766"
         ],
         borderWidth: 2,
       },
@@ -223,7 +245,7 @@ var myChart1 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -238,7 +260,7 @@ var myChart1 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 11,
           },
           gridLines: {
             display: false,
@@ -286,6 +308,9 @@ var myChart2 = new Chart(ctx, {
           "#ADD9C3",
           "#ADD9C3",
         ],
+        borderColor: [
+          "#ADD9C3"
+        ],
         borderWidth: 2,
       },
       {
@@ -302,6 +327,9 @@ var myChart2 = new Chart(ctx, {
           "#43BACC",
           "#43BACC",
           "#43BACC",
+        ],
+        borderColor: [
+          "#43BACC"
         ],
         borderWidth: 2,
       },
@@ -320,6 +348,9 @@ var myChart2 = new Chart(ctx, {
           "#0086BF",
           "#0086BF",
         ],
+        borderColor: [
+          "#0086BF"
+        ],
         borderWidth: 2,
       },
       {
@@ -337,6 +368,9 @@ var myChart2 = new Chart(ctx, {
           "#4051B3",
           "#4051B3",
         ],
+        borderColor: [
+          "#4051B3"
+        ],
         borderWidth: 2,
       },
       {
@@ -353,6 +387,9 @@ var myChart2 = new Chart(ctx, {
           "#111766",
           "#111766",
           "#111766",
+        ],
+        borderColor: [
+          "#111766"
         ],
         borderWidth: 2,
       },
@@ -372,7 +409,7 @@ var myChart2 = new Chart(ctx, {
       fullWidth: true,
       labels: {
         boxWidth: 10,
-        fontSize: 10,
+        fontSize: 11,
         fontColor: "#000",
         padding: 10,
       },
@@ -383,7 +420,7 @@ var myChart2 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -398,7 +435,7 @@ var myChart2 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 11,
           },
           gridLines: {
             display: false,
@@ -428,30 +465,35 @@ var myChart3 = new Chart(ctx, {
         label: "平成28年",
         data: [57.9, 58.6, 23.6, 13.3],
         backgroundColor: ["#ADD9C3", "#ADD9C3", "#ADD9C3", "#ADD9C3"],
+        borderColor: ["#ADD9C3"],
         borderWidth: 2,
       },
       {
         label: "平成29年",
         data: [59.7, 52.5, 20.9, 9.9],
         backgroundColor: ["#43BACC", "#43BACC", "#43BACC", "#43BACC"],
+        borderColor: ["#43BACC"],
         borderWidth: 2,
       },
       {
         label: "平成30年",
         data: [59.5, 48.2, 20.8, 8.8],
         backgroundColor: ["#0086BF", "#0086BF", "#0086BF", "#0086BF"],
+        borderColor: ["#0086BF"],
         borderWidth: 2,
       },
       {
         label: "令和元年",
         data: [63.3, 50.4, 23.2, 10.5],
         backgroundColor: ["#4051B3", "#4051B3", "#4051B3", "#4051B3"],
+        borderColor: ["#4051B3"],
         borderWidth: 2,
       },
       {
         label: "令和2年",
         data: [70.3, 60.4, 33.2, 15.5],
         backgroundColor: ["#111766", "#111766", "#111766", "#111766"],
+        borderColor: ["#111766"],
         borderWidth: 2,
       },
     ],
@@ -470,7 +512,7 @@ var myChart3 = new Chart(ctx, {
       fullWidth: true,
       labels: {
         boxWidth: 10,
-        fontSize: 10,
+        fontSize: 11,
         fontColor: "#000",
         padding: 5,
       },
@@ -494,7 +536,7 @@ var myChart3 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -523,15 +565,15 @@ var myChart4 = new Chart(ctx, {
   data: {
     labels: [
       "平成23年",
-      "平成24年",
-      "平成25年",
-      "平成26年",
-      "平成27年",
-      "平成28年",
-      "平成29年",
-      "平成30年",
+      "24年",
+      "25年",
+      "26年",
+      "27年",
+      "28年",
+      "29年",
+      "30年",
       "令和元年",
-      "令和2年",
+      "2年",
     ],
     datasets: [
       {
@@ -648,7 +690,7 @@ var myChart4 = new Chart(ctx, {
       fullWidth: true,
       labels: {
         boxWidth: 10,
-        fontSize: 10,
+        fontSize: 11,
         fontColor: "#000",
         padding: 10,
       },
@@ -659,7 +701,7 @@ var myChart4 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -674,7 +716,7 @@ var myChart4 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 11,
           },
           gridLines: {
             display: false,
@@ -722,6 +764,9 @@ var myChart5 = new Chart(ctx, {
           "#ADD9C3",
           "#ADD9C3",
         ],
+        borderColor: [
+          "#ADD9C3"
+        ],
         borderWidth: 2,
       },
       {
@@ -734,6 +779,9 @@ var myChart5 = new Chart(ctx, {
           "#43BACC",
           "#43BACC",
           "#43BACC",
+        ],
+        borderColor: [
+          "#43BACC"
         ],
         borderWidth: 2,
       },
@@ -748,6 +796,9 @@ var myChart5 = new Chart(ctx, {
           "#0086BF",
           "#0086BF",
         ],
+        borderColor: [
+          "#0086BF"
+        ],
         borderWidth: 2,
       },
       {
@@ -761,6 +812,9 @@ var myChart5 = new Chart(ctx, {
           "#4051B3",
           "#4051B3",
         ],
+        borderColor: [
+          "#4051B3"
+        ],
         borderWidth: 2,
       },
       {
@@ -773,6 +827,9 @@ var myChart5 = new Chart(ctx, {
           "#111766",
           "#111766",
           "#111766",
+        ],
+        borderColor: [
+          "#111766"
         ],
         borderWidth: 2,
       },
@@ -798,7 +855,7 @@ var myChart5 = new Chart(ctx, {
       fullWidth: true,
       labels: {
         boxWidth: 10,
-        fontSize: 10,
+        fontSize: 11,
         fontColor: "#000",
         padding: 10,
       },
@@ -823,7 +880,7 @@ var myChart5 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -1005,7 +1062,7 @@ var myChart6 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 11,
           },
           gridLines: {
             display: false,
@@ -1081,7 +1138,6 @@ var myChart7 = new Chart(ctx, {
         tension: 0, // ベジェ曲線を無効にする
         fill: false,
         stack: 1,
-        // "fill": "-1"
       },
     },
     layout: {
@@ -1097,7 +1153,7 @@ var myChart7 = new Chart(ctx, {
       fullWidth: true,
       labels: {
         boxWidth: 10,
-        fontSize: 10,
+        fontSize: 11,
         fontColor: "#000",
         padding: 10,
       },
@@ -1123,7 +1179,7 @@ var myChart7 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 11,
           },
           gridLines: {
             display: false,
@@ -1199,7 +1255,7 @@ var myChart9 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -1214,7 +1270,7 @@ var myChart9 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 11,
           },
           gridLines: {
             display: false,
@@ -1296,7 +1352,6 @@ var myChart10 = new Chart(ctx, {
         tension: 0, // ベジェ曲線を無効にする
         fill: false,
         stack: 1,
-        // "fill": "-1"
       },
     },
     layout: {
@@ -1312,9 +1367,9 @@ var myChart10 = new Chart(ctx, {
       fullWidth: true,
       labels: {
         boxWidth: 10,
-        fontSize: 10,
+        fontSize: 11,
         fontColor: "#000",
-        padding: 5,
+        padding: 10,
       },
     },
     scales: {
@@ -1323,7 +1378,7 @@ var myChart10 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 13,
             min: 0,
             max: 100,
           },
@@ -1338,7 +1393,7 @@ var myChart10 = new Chart(ctx, {
           ticks: {
             beginAtZero: true,
             fontColor: "#000",
-            fontSize: 10,
+            fontSize: 11,
           },
           gridLines: {
             display: false,
